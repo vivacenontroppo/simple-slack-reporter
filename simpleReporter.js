@@ -1,8 +1,8 @@
 const fs = require("fs");
 const { exec, execSync } = require("child_process");
-const log = fs.readFileSync("./fullSuccLog.txt", "UTF-8");
+const log = fs.readFileSync("./testLog.txt", "UTF-8");
 const slackHook =
-  "***";
+  "https://hooks.slack.com/services/***";
 
 const report = logFile => {
   let timeNumber = logFile.search("Time:");
@@ -45,12 +45,11 @@ const report = logFile => {
         .toString()
         .replace(/[\"\']/g, " ")
         .replace(/,/g, "\n");
-      console.log(failSummary);
       execSync(
         `curl -X POST -H 'Content-type: application/json' --data '{"text":":exclamation: --- Test run failed! --- :exclamation:\n\n:hourglass:*${testTime}* seconds\n\n:clipboard:*Tests performed:*\n${performedSummary}\n\n:no_entry: *${failsAmountTxt}*\n\n ${failsSlackInfo} \n\n:arrow_down: For more info see the log file :arrow_down:"}' ${slackHook}`
       );
 
-      reject("--- Test run failed! ---");
+      reject(`--- Test run failed! ---\n${failsSlackInfo}`);
     }
   });
 };
@@ -59,7 +58,7 @@ report(log)
   .then(r => console.log(`${r}`))
   .catch(e => {
     execSync(
-      `curl -F file=@testLog.txt -F channels=*** -H "Authorization: ***" https://slack.com/api/files.upload`
+      `curl -F file=@testLog.txt -F channels=*** -H "Authorization: Bearer ***" https://slack.com/api/files.upload`
     );
     console.log(e);
     process.exit(1);
