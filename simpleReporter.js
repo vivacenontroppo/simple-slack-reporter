@@ -19,7 +19,7 @@ const report = logFile => {
   return new Promise((resolve, reject) => {
     if (logFile.indexOf("FAILURES!!!") === -1) {
       exec(
-        `curl -X POST -H 'Content-type: application/json' --data '{"text":":white_check_mark: --- All tests completed successfully --- :white_check_mark:\n\n:clipboard:*Tests performed:*\n\n${performedSummary}\n\n:hourglass:*${testTime}* seconds\n\n:arrow_down: For more info see the log file :arrow_down:"}' ${slackHook}`
+        `curl -X POST -H 'Content-type: application/json' --data '{"text":":white_check_mark: --- All tests completed successfully --- :white_check_mark:\n\n:clipboard:*Tests performed:*\n\n${performedSummary}\n\n:hourglass:*${testTime}* seconds\n\n:arrow_up_down: For more info see the log file :arrow_up_down:"}' ${slackHook}`
       );
 
       resolve(`--- All tests completed successfully ---\n${testStringInfo}`);
