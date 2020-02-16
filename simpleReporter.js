@@ -1,6 +1,6 @@
 const fs = require("fs");
 const request = require("request");
-const log = fs.readFileSync("./pusty.txt", "UTF-8");
+const log = fs.readFileSync("./testLog.txt", "UTF-8");
 const headers = { "Content-type": "application/json" };
 const fileUploadUrl = "https://slack.com/api/files.upload";
 const slackHook =
