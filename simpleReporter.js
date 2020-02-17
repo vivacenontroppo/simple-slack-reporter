@@ -143,7 +143,7 @@ class Reporter {
       } else if (this.testTimeNumber && this.file.includes("FAILURES!!!")) {
         const failsAmountString = this.testsSummaryString.split("\n")[1];
         const failsNumber = parseInt(failsAmountString.match(/\d+/)[0], 10);
-        const failSummary = [];
+        const failsSummary = [];
 
         for (let i = 1; i < failsNumber + 1; i++) {
           let failIndex = i + "\\) ";
