@@ -15,19 +15,19 @@ class Reporter {
     this.path = path;
     this.coding = coding;
     this.file = fs.readFileSync(this.path, this.coding);
-    this.logArray1 = this.file.split(/\n/);
-    this.timeIndexNumber = this.file.search("Time:");
-    this.testStringInfo = this.file.substring(
-      this.timeIndexNumber,
-      this.timeIndexNumber + 300
+    this.logArray = this.file.split(/\n/);
+    this.timePositionIndex = this.file.search("Time:");
+    this.testsSummaryString = this.file.substring(
+      this.timePositionIndex,
+      this.timePositionIndex + 300
     );
-    this.testTimeString = this.testStringInfo.split("\n")[0];
+    this.testTimeString = this.testsSummaryString.split("\n")[0];
     this.testTimeNumber = parseFloat(
       this.testTimeString.replace(/[^\d\.]*/g, "")
     );
-    this.matchedTests = this.logArray1.filter(matchTests);
+    this.matchedTests = this.logArray.filter(matchTests);
     this.testsPerformed = [...new Set(this.matchedTests)];
-    this.performedSummary = this.testsPerformed
+    this.performedTestsList = this.testsPerformed
       .toString()
       .replace(/INSTRUMENTATION_STATUS: test=/g, "")
       .replace(/,/g, "\n");
@@ -59,7 +59,7 @@ class Reporter {
   }
 
   sendSlackMessage(result) {
-    let slackMsg = {
+    let slackMessage = {
       text: `${result.message}`,
       icon_emoji: ":clipboard:",
       attachments: [
@@ -68,7 +68,7 @@ class Reporter {
           fields: [
             {
               title: ":clipboard:*Tests performed:*",
-              value: `${this.performedSummary}`,
+              value: `${this.performedTestsList}`,
               short: true
             },
             {
@@ -82,7 +82,7 @@ class Reporter {
               short: false
             },
             {
-              title: `${result.failsAmountTxt}`,
+              title: `${result.failsAmountString}`,
               value: `${result.failsSlackInfo}`,
               short: false
             }
@@ -91,21 +91,21 @@ class Reporter {
       ]
     };
 
-    (function adjustMsg() {
+    (function adjustslackMessage() {
       if (result.status === "success") {
-        slackMsg.attachments[0].fields.pop();
-        return slackMsg;
+        slackMessage.attachments[0].fields.pop();
+        return slackMessage;
       } else if (result.status === "crashed") {
-        slackMsg.attachments[0].fields.pop();
-        slackMsg.attachments[0].fields[1].value = "Duration unknown";
-        return slackMsg;
+        slackMessage.attachments[0].fields.pop();
+        slackMessage.attachments[0].fields[1].value = "Duration unknown";
+        return slackMessage;
       } else if (result.status === "uncomplete") {
-        delete slackMsg.attachments;
-        return slackMsg;
+        delete slackMessage.attachments;
+        return slackMessage;
       }
     })();
 
-    let payload = JSON.stringify(slackMsg);
+    let payload = JSON.stringify(slackMessage);
 
     return new Promise((resolve, reject) => {
       console.log("Sending report to slack...");
@@ -113,14 +113,15 @@ class Reporter {
       request.post(
         { url: slackHook, body: payload, headers: headers },
         (err, response) => {
-          if (response) resolve(response.body);
+          if (response.body.includes("ok")) resolve("Report send successfully!");
+          if (response.body.includes("error")) reject(`Failed to send report: ${response.body}`);
           if (err) reject(err);
         }
       );
     });
   }
 
-  report() {
+  getResult() {
     return new Promise((resolve, reject) => {
       if (this.testTimeNumber && !this.file.includes("FAILURES!!!")) {
         const result = {
@@ -140,8 +141,8 @@ class Reporter {
 
         reject(result);
       } else if (this.testTimeNumber && this.file.includes("FAILURES!!!")) {
-        const failsAmountTxt = this.testStringInfo.split("\n")[1];
-        const failsNumber = parseInt(failsAmountTxt.match(/\d+/)[0], 10);
+        const failsAmountString = this.testsSummaryString.split("\n")[1];
+        const failsNumber = parseInt(failsAmountString.match(/\d+/)[0], 10);
         const failSummary = [];
 
         for (let i = 1; i < failsNumber + 1; i++) {
@@ -153,11 +154,11 @@ class Reporter {
           let failLine2 = this.file
             .substring(failIndexNumber, failIndexNumber + 400)
             .split("\n")[1];
-          failSummary.push(failLine1);
-          failSummary.push(failLine2);
+          failsSummary.push(failLine1);
+          failsSummary.push(failLine2);
         }
 
-        const failsSlackInfo = failSummary
+        const failsSlackInfo = failsSummary
           .toString()
           .replace(/[\"\']/g, " ")
           .replace(/,/g, "\n");
@@ -166,7 +167,7 @@ class Reporter {
           status: "failed",
           message: ":exclamation: --- Test run failed! --- :exclamation:",
           color: "#DC143C",
-          failsAmountTxt: failsAmountTxt,
+          failsAmountString: failsAmountString,
           failsSlackInfo: failsSlackInfo
         };
 
@@ -187,7 +188,7 @@ class Reporter {
 const reporter = new Reporter(logInfo);
 
 reporter
-  .report()
+  .getResult()
   .then(r =>
     reporter
       .sendSlackMessage(r)
