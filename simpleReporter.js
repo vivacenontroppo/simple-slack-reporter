@@ -1,6 +1,6 @@
 const fs = require("fs");
 const request = require("request");
-const log = fs.readFileSync("./testLog.txt", "UTF-8");
+const logInfo = ["./emptyLog.txt", "UTF-8"];
 const headers = { "Content-type": "application/json" };
 const fileUploadUrl = "https://slack.com/api/files.upload";
 const slackHook =
@@ -8,134 +8,203 @@ const slackHook =
 const token =
   "***";
 const nonZeroExit = () => setTimeout(() => process.exit(1), 1000);
-const timeIndexNumber = log.search("Time:");
-const testStringInfo = log.substring(timeIndexNumber, timeIndexNumber + 300);
-const testTimeString = testStringInfo.split("\n")[0];
-const testTimeNumber = parseFloat(testTimeString.replace(/[^\d\.]*/g, ""));
-const logArray = log.split(/\n/);
 const matchTests = str => str.match("test=");
-const matchedTests = logArray.filter(matchTests);
-const testsPerformed = [...new Set(matchedTests)];
-const performedSummary = testsPerformed
-  .toString()
-  .replace(/INSTRUMENTATION_STATUS: test=/g, "")
-  .replace(/,/g, "\n");
-const testPayload = `:clipboard:*Tests performed:*\n\n${performedSummary}\n\n:hourglass:Time: *${testTimeNumber}* seconds\n\n:arrow_up_down: For more info see the log file :arrow_up_down:`;
 
-const sendLogFile = () => {
-  console.log("Sending log file to slack...");
-  return new Promise((resolve, reject) => {
-    request.post(
-      {
-        url: fileUploadUrl,
-        formData: {
-          token: token,
-          title: "Test Log File",
-          filename: "testLog.txt",
-          filetype: "auto",
-          channels: "***",
-          file: fs.createReadStream("testLog.txt")
+class Reporter {
+  constructor([path, coding]) {
+    this.path = path;
+    this.coding = coding;
+    this.file = fs.readFileSync(this.path, this.coding);
+    this.logArray1 = this.file.split(/\n/);
+    this.timeIndexNumber = this.file.search("Time:");
+    this.testStringInfo = this.file.substring(
+      this.timeIndexNumber,
+      this.timeIndexNumber + 300
+    );
+    this.testTimeString = this.testStringInfo.split("\n")[0];
+    this.testTimeNumber = parseFloat(
+      this.testTimeString.replace(/[^\d\.]*/g, "")
+    );
+    this.matchedTests = this.logArray1.filter(matchTests);
+    this.testsPerformed = [...new Set(this.matchedTests)];
+    this.performedSummary = this.testsPerformed
+      .toString()
+      .replace(/INSTRUMENTATION_STATUS: test=/g, "")
+      .replace(/,/g, "\n");
+  }
+
+  sendLogFile() {
+    console.log("Sending log file to slack...");
+    return new Promise((resolve, reject) => {
+      request.post(
+        {
+          url: fileUploadUrl,
+          formData: {
+            token: token,
+            title: "Test Log File",
+            filename: "testLog.txt",
+            filetype: "auto",
+            channels: "***",
+            file: fs.createReadStream("testLog.txt")
+          }
+        },
+        function(err, response) {
+          if (response.body.includes("created"))
+            resolve("File send successfully!");
+          if (response.body.includes("error")) reject(response.body);
+          if (err) reject(err);
         }
-      },
-      function(err, response) {
-        if (response.body.includes("created"))
-          resolve("File send successfully!");
-        if (response.body.includes("error")) reject(response.body);
-        if (err) reject(err);
-      }
-    );
-  });
-};
+      );
+    });
+  }
 
-const postToSlack = content => {
-  return new Promise((resolve, reject) => {
-    console.log("Posting report to Slack...");
-
-    let payload = {
-      text: content
+  sendSlackMessage(result) {
+    //"#DC143C"
+    let slackMsg = {
+      text: `${result.message}`,
+      icon_emoji: ":clipboard:",
+      attachments: [
+        {
+          color: result.color,
+          fields: [
+            {
+              title: ":clipboard:*Tests performed:*",
+              value: `${this.performedSummary}`,
+              short: true
+            },
+            {
+              title: ":hourglass:*Time:*",
+              value: `${this.testTimeNumber} seconds`,
+              short: true
+            },
+            {
+              title:
+                ":arrow_up_down: For more info see the log file :arrow_up_down:",
+              short: false
+            },
+            {
+              title: `${result.failsAmountTxt}`,
+              value: `${result.failsSlackInfo}`,
+              short: false
+            }
+          ]
+        }
+      ]
     };
-    payload = JSON.stringify(payload);
 
-    request.post(
-      { url: slackHook, body: payload, headers: headers },
-      (err, response) => {
-        if (response) resolve(response.body);
-        if (err) reject(err);
+    (function adjustMsg() {
+      if (result.status === "success") {
+        slackMsg.attachments[0].fields.pop();
+        return slackMsg;
+      } else if (result.status === "crashed") {
+        slackMsg.attachments[0].fields.pop();
+        slackMsg.attachments[0].fields[1].value = "Duration unknown";
+        return slackMsg;
+      } else if (result.status === "uncomplete") {
+        delete slackMsg.attachments;
+        return slackMsg;
       }
-    );
-  });
-};
+    })();
 
-const report = logFile => {
-  return new Promise((resolve, reject) => {
-    if (testTimeNumber && !logFile.includes("FAILURES!!!")) {
-      postToSlack(
-        `:white_check_mark: --- All tests completed successfully --- :white_check_mark:\n\n${testPayload}`
-      )
-        .then(r => console.log(r))
-        .catch(e => console.log(e));
+    let payload = JSON.stringify(slackMsg);
 
-      resolve(`--- All tests completed successfully ---`);
-    } else if (logFile.includes("Process crashed")) {
-      postToSlack(
-        `:exclamation: --- Process crashed, test run failed --- :exclamation:\n\n:arrow_up_down: For more info see the log file :arrow_up_down:`
+    return new Promise((resolve, reject) => {
+      console.log("Sending report to slack...");
+
+      request.post(
+        { url: slackHook, body: payload, headers: headers },
+        (err, response) => {
+          if (response) resolve(response.body);
+          if (err) reject(err);
+        }
       );
+    });
+  }
 
-      reject(`--- Process crashed, test run failed ---`);
-    } else if (testTimeNumber && logFile.includes("FAILURES!!!")) {
-      const failsAmountTxt = testStringInfo.split("\n")[1];
-      const failsNumber = parseInt(failsAmountTxt.match(/\d+/)[0], 10);
-      const failSummary = [];
+  report() {
+    return new Promise((resolve, reject) => {
+      if (this.testTimeNumber && !this.file.includes("FAILURES!!!")) {
+        const result = {
+          status: "success",
+          message: `:white_check_mark: --- All tests completed successfully --- :white_check_mark:`,
+          color: "#048a04"
+        };
 
-      for (let i = 1; i < failsNumber + 1; i++) {
-        let failIndex = i + "\\) ";
-        let failIndexNumber = logFile.search(failIndex);
-        let failLine1 = logFile
-          .substring(failIndexNumber, failIndexNumber + 300)
-          .split("\n")[0];
-        let failLine2 = logFile
-          .substring(failIndexNumber, failIndexNumber + 400)
-          .split("\n")[1];
-        failSummary.push(failLine1);
-        failSummary.push(failLine2);
+        resolve(result);
+      } else if (this.file.includes("Process crashed")) {
+        const result = {
+          status: "crashed",
+          message:
+            ":exclamation: --- Process crashed, test run failed --- :exclamation:",
+          color: "#c400ad"
+        };
+
+        reject(result);
+      } else if (this.testTimeNumber && this.file.includes("FAILURES!!!")) {
+        const failsAmountTxt = this.testStringInfo.split("\n")[1];
+        const failsNumber = parseInt(failsAmountTxt.match(/\d+/)[0], 10);
+        const failSummary = [];
+
+        for (let i = 1; i < failsNumber + 1; i++) {
+          let failIndex = i + "\\) ";
+          let failIndexNumber = this.file.search(failIndex);
+          let failLine1 = this.file
+            .substring(failIndexNumber, failIndexNumber + 300)
+            .split("\n")[0];
+          let failLine2 = this.file
+            .substring(failIndexNumber, failIndexNumber + 400)
+            .split("\n")[1];
+          failSummary.push(failLine1);
+          failSummary.push(failLine2);
+        }
+
+        const failsSlackInfo = failSummary
+          .toString()
+          .replace(/[\"\']/g, " ")
+          .replace(/,/g, "\n");
+
+        const result = {
+          status: "failed",
+          message: ":exclamation: --- Test run failed! --- :exclamation:",
+          color: "#DC143C",
+          failsAmountTxt: failsAmountTxt,
+          failsSlackInfo: failsSlackInfo
+        };
+
+        reject(result);
+      } else {
+        const result = {
+          status: "uncomplete",
+          message:
+            ":exclamation: --- Incomplite log file, test run failed --- :exclamation:"
+        };
+
+        reject(result);
       }
+    });
+  }
+}
 
-      const failsSlackInfo = failSummary
-        .toString()
-        .replace(/[\"\']/g, " ")
-        .replace(/,/g, "\n");
+const reporter = new Reporter(logInfo);
 
-      postToSlack(
-        `:exclamation: --- Test run failed! --- :exclamation:\n\n${testPayload}\n\n*${failsAmountTxt}*\n\n${failsSlackInfo}`
-      )
-        .then(_ => nonZeroExit())
-        .catch(e => console.log(e));
-
-      reject(
-        `--- Test run failed ---\n\n${failsAmountTxt}\n\n${failsSlackInfo}`
-      );
-    } else {
-      postToSlack(
-        ":exclamation: --- Incomplite log file, test run failed --- :exclamation:"
-      );
-
-      reject(`--- Incomplite log file, test run failed ---`);
-    }
-  });
-};
-
-report(log)
-  .then(r => {
-    console.log(r);
-
-    sendLogFile()
+reporter
+  .report()
+  .then(r =>
+    reporter
+      .sendSlackMessage(r)
       .then(r => console.log(r))
-      .catch(e => console.log(e));
-  })
-  .catch(e => {
-    console.log(e);
-
-    sendLogFile()
+      .catch(e => console.log(e))
+  )
+  .catch(e =>
+    reporter
+      .sendSlackMessage(e)
       .then(r => console.log(r))
-      .catch(e => console.log(e));
-  });
+      .catch(e => console.log(e))
+      .finally(nonZeroExit())
+  )
+  .finally(
+    reporter
+      .sendLogFile()
+      .then(r => console.log(r))
+      .catch(e => console.log(e))
+  );
