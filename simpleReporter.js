@@ -22,9 +22,7 @@ class Reporter {
       this.timePositionIndex + 300
     );
     this.testTimeString = this.testsSummaryString.split("\n")[0];
-    this.testTimeNumber = parseFloat(
-      this.testTimeString.replace(/[^\d\.]*/g, "")
-    );
+    this.testTimeNumber = this.testTimeString.replace("Time: ", "")
     this.matchedTests = this.logArray.filter(matchTests);
     this.testsPerformed = [...new Set(this.matchedTests)];
     this.performedTestsList = this.testsPerformed

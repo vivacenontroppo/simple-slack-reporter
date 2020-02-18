@@ -4469,7 +4469,7 @@ INSTRUMENTATION_STATUS: test=greenPathZmianaKonta
 INSTRUMENTATION_STATUS_CODE: 0
 INSTRUMENTATION_RESULT: stream=
 
-Time: 495.921
+Time: 495,921
 There were 8 failures:
 1) greenPathDoladowanieTelefonu(ai.lekta.sdk.demo.greenpath.DoladowanieTelefonu)
 android.support.test.espresso.base.DefaultFailureHandler$AssertionFailedWithCauseError: 'with text: a string containing "\"msisdn\": \"505235221\""' doesn't match the selected view.
