@@ -1,0 +1,972 @@
+INSTRUMENTATION_STATUS: numtests=16
+INSTRUMENTATION_STATUS: stream=
+ai.lekta.sdk.demo.greenpath.AnulujZadanie:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=greenPathAnulujZadanie
+INSTRUMENTATION_STATUS: class=ai.lekta.sdk.demo.greenpath.AnulujZadanie
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=16
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=greenPathAnulujZadanie
+INSTRUMENTATION_STATUS: class=ai.lekta.sdk.demo.greenpath.AnulujZadanie
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=16
+INSTRUMENTATION_STATUS: stream=
+ai.lekta.sdk.demo.greenpath.BugReport:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=greenPathBugReport
+INSTRUMENTATION_STATUS: class=ai.lekta.sdk.demo.greenpath.BugReport
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=16
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=greenPathBugReport
+INSTRUMENTATION_STATUS: class=ai.lekta.sdk.demo.greenpath.BugReport
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=16
+INSTRUMENTATION_STATUS: stream=
+ai.lekta.sdk.demo.greenpath.DoladowanieTelefonu:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=greenPathDoladowanieTelefonu
+INSTRUMENTATION_STATUS: class=ai.lekta.sdk.demo.greenpath.DoladowanieTelefonu
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=16
+INSTRUMENTATION_STATUS: stream=
+Error in greenPathDoladowanieTelefonu(ai.lekta.sdk.demo.greenpath.DoladowanieTelefonu):
+android.support.test.espresso.AmbiguousViewMatcherException: '(with id: ai.lekta.sdk.demo:id/messageTv and with text: is " " and is displayed on the screen to the user)' matches multiple views in the hierarchy.
+Problem views are marked with '****MATCHES****' below.
+
+View Hierarchy:
++>DecorView{id=-1, visibility=VISIBLE, width=720, height=1280, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=WM.LayoutParams{(0,0)(fillxfill) ty=1 fl=#81810100 wanim=0x103045b needsMenuKey=2 clr=0x1}, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3} 
+|
++->LinearLayout{id=-1, visibility=VISIBLE, width=720, height=1187, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@18b5898, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++-->ViewStub{id=16909220, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@ae338f1, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+|
++-->FrameLayout{id=-1, visibility=VISIBLE, width=720, height=1139, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@97edcd6, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=48.0, child-count=1} 
+|
++--->FitWindowsLinearLayout{id=2131361806, res-name=action_bar_root, visibility=VISIBLE, width=720, height=1139, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@5296644, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++---->ViewStubCompat{id=2131361817, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@c61732d, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+|
++---->ContentFrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=720, height=1139, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@863f062, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++----->FrameLayout{id=2131361863, res-name=container, visibility=VISIBLE, width=720, height=1139, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@39765f3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++------>DrawerLayout{id=2131361822, res-name=activity_main, visibility=VISIBLE, width=720, height=1139, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@578a2b0, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=1139, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v4.widget.DrawerLayout$LayoutParams@794b0ae, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=6} 
+|
++-------->ConstraintLayout{id=2131362084, res-name=toolbarLayout, visibility=VISIBLE, width=720, height=144, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@cb86e4f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++--------->AppCompatTextView{id=2131361889, res-name=dialogueIdTv, visibility=VISIBLE, width=506, height=71, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@c3d39dc, tag=null, root-is-layout-requested=false, has-input-connection=false, x=107.0, y=37.0, text=71c9fcdc-a7e4-43b5-8e7b-d31a832716dc, input-type=0, ime-target=false, has-links=false} 
+|
++--------->AppCompatImageView{id=2131361858, res-name=closeBtn, visibility=VISIBLE, width=96, height=96, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@9dadae5, tag=null, root-is-layout-requested=false, has-input-connection=false, x=608.0, y=24.0} 
+|
++-------->RecyclerView{id=2131361853, res-name=chatList, visibility=VISIBLE, width=720, height=819, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@2ff29ba, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=144.0, child-count=7} 
+|
++--------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=443, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@537a06b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=-416.0, child-count=1} 
+|
++---------->AppCompatTextView{id=2131361960, res-name=messageTv, visibility=VISIBLE, width=544, height=443, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@95217c8, tag=null, root-is-layout-requested=false, has-input-connection=false, x=48.0, y=0.0, text=Zmieniam kwotę doładowania na 25,00 PLN. Potwierdź dane: doładowanie telefonu z: Konto bez granic 89 (...) 0940 5731, numer telefonu: +48 505 235 221, operator: Play, kwota: 25,00 PLN. Imię i nazwisko: ANTONI FABRYKA, e-mail: antoni.fabryka@fakemail.com. Czy wszystko się zgadza? , input-type=0, ime-target=false, has-links=false} 
+|
++--------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=81, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@7e34061, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=59.0, child-count=1} 
+|
++---------->AppCompatTextView{id=2131361960, res-name=messageTv, visibility=VISIBLE, width=100, height=81, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@5662786, tag=null, root-is-layout-requested=false, has-input-connection=false, x=572.0, y=0.0, text=Tak, input-type=0, ime-target=false, has-links=false} 
+|
++--------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=81, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@42dd847, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=172.0, child-count=1} 
+|
++---------->AppCompatTextView{id=2131361960, res-name=messageTv, visibility=VISIBLE, width=56, height=81, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@d54e874, tag=null, root-is-layout-requested=false, has-input-connection=false, x=48.0, y=0.0, text= , input-type=0, ime-target=false, has-links=false} ****MATCHES****
+|
++--------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=81, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@9b2819d, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=285.0, child-count=1} 
+|
++---------->AppCompatTextView{id=2131361960, res-name=messageTv, visibility=VISIBLE, width=100, height=81, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@ed3612, tag=null, root-is-layout-requested=false, has-input-connection=false, x=572.0, y=0.0, text=Tak, input-type=0, ime-target=false, has-links=false} 
+|
++--------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=163, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@f65b1e3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=398.0, child-count=1} 
+|
++---------->AppCompatTextView{id=2131361960, res-name=messageTv, visibility=VISIBLE, width=544, height=163, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@31217e0, tag=null, root-is-layout-requested=false, has-input-connection=false, x=48.0, y=0.0, text=Dla bezpieczeństwa potwierdź doładowanie. Wpisz kod PIN do aplikacji. , input-type=0, ime-target=false, has-links=false} 
+|
++--------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=81, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@93a9a99, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=593.0, child-count=1} 
+|
++---------->AppCompatTextView{id=2131361960, res-name=messageTv, visibility=VISIBLE, width=115, height=81, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@464a15e, tag=null, root-is-layout-requested=false, has-input-connection=false, x=557.0, y=0.0, text=1234, input-type=0, ime-target=false, has-links=false} 
+|
++--------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=81, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@4b7893f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=706.0, child-count=1} 
+|
++---------->AppCompatTextView{id=2131361960, res-name=messageTv, visibility=VISIBLE, width=56, height=81, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@3b0d20c, tag=null, root-is-layout-requested=false, has-input-connection=false, x=48.0, y=0.0, text= , input-type=0, ime-target=false, has-links=false} ****MATCHES****
+|
++-------->AppCompatTextView{id=2131361972, res-name=noConnectionLayout, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@3914755, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=Connection lost. Trying to reconnect…, input-type=0, ime-target=false, has-links=false} 
+|
++-------->View{id=2131362087, res-name=topShadow, visibility=VISIBLE, width=720, height=2, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@955756a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=144.0} 
+|
++-------->View{id=2131361843, res-name=bottomShadow, visibility=VISIBLE, width=720, height=2, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@d257a5b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=961.0} 
+|
++-------->ConstraintLayout{id=2131361932, res-name=inputLayout, visibility=VISIBLE, width=720, height=176, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@76c03d1, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=963.0, child-count=6} 
+|
++--------->AppCompatImageView{id=2131361967, res-name=muteBtn, visibility=VISIBLE, width=96, height=96, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@6cd7e36, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=40.0} 
+|
++--------->AppCompatImageView{id=2131362035, res-name=showTextInterfaceBtn, desc=Show text input icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@5b76137, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+|
++--------->AppCompatImageView{id=2131362037, res-name=showVoiceInterfaceBtn, desc=Show voice input icon, visibility=VISIBLE, width=96, height=96, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@63d56a4, tag=null, root-is-layout-requested=false, has-input-connection=false, x=122.0, y=40.0} 
+|
++--------->AppCompatEditText{id=2131361931, res-name=input, visibility=VISIBLE, width=378, height=81, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@4eb47c2, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x24001 imeOptions=0x44000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x2000 hintText=Start typing here… label=null packageName=null fieldId=0 fieldName=null extras=null ], x=218.0, y=48.0, text=, hint=Start typing here…, input-type=147457, ime-target=false, has-links=false} 
+|
++--------->AppCompatImageView{id=2131362031, res-name=sendBtn, visibility=VISIBLE, width=96, height=96, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@a16d9d3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=608.0, y=40.0} 
+|
++--------->AppCompatImageView{id=2131362045, res-name=speakBtn, visibility=INVISIBLE, width=128, height=128, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@e4b3910, tag=null, root-is-layout-requested=false, has-input-connection=false, x=296.0, y=24.0} 
+|
++------->NavigationView{id=-1, visibility=INVISIBLE, width=592, height=1139, has-focus=true, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v4.widget.DrawerLayout$LayoutParams@3ca5c09, tag=null, root-is-layout-requested=false, has-input-connection=false, x=-592.0, y=0.0, child-count=2} 
+|
++-------->NavigationMenuView{id=2131361888, res-name=design_navigation_view, visibility=VISIBLE, width=592, height=1139, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@d2a1e0e, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++--------->LinearLayout{id=2131361970, res-name=navigation_header_container, visibility=VISIBLE, width=592, height=16, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@ceb402f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=0} 
+|
++-------->ScrollView{id=-1, visibility=VISIBLE, width=592, height=1139, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@112d63c, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++--------->LinearLayout{id=-1, visibility=VISIBLE, width=592, height=2035, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@b3afc5, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=10} 
+|
++---------->AppCompatTextView{id=-1, visibility=VISIBLE, width=512, height=49, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@36e0d1a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=40.0, y=32.0, text=Demo SDK Developer menu, input-type=0, ime-target=false, has-links=false} 
+|
++---------->AppCompatTextView{id=2131362018, res-name=sdkVersion, visibility=VISIBLE, width=512, height=49, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@9f5b04b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=40.0, y=81.0, text=0.8.4 debug, input-type=0, ime-target=false, has-links=false} 
+|
++---------->AppCompatTextView{id=2131361995, res-name=pingDelay, visibility=VISIBLE, width=512, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@e551a28, tag=null, root-is-layout-requested=false, has-input-connection=false, x=40.0, y=146.0, text=Delay: 108ms, input-type=0, ime-target=false, has-links=false} 
+|
++---------->AppCompatTextView{id=-1, visibility=VISIBLE, width=512, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@b248341, tag=null, root-is-layout-requested=false, has-input-connection=false, x=40.0, y=200.0, text=TTS, input-type=0, ime-target=false, has-links=false} 
+|
++---------->LinearLayout{id=-1, visibility=VISIBLE, width=528, height=224, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@3cfe0e6, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=254.0, child-count=2} 
+|
++----------->AppCompatButton{id=2131361874, res-name=debugSayLongTextBtn, visibility=VISIBLE, width=253, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@ded0627, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=16.0, text=Say long text, input-type=0, ime-target=false, has-links=false} 
+|
++----------->LinearLayout{id=-1, visibility=VISIBLE, width=496, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@ef5b0d4, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=112.0, child-count=2} 
+|
++------------>AppCompatButton{id=2131361875, res-name=debugSayTextBtn, visibility=VISIBLE, width=176, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@275127d, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=Say, input-type=0, ime-target=false, has-links=false} 
+|
++------------>AppCompatEditText{id=2131361876, res-name=debugSayTextEdt, visibility=VISIBLE, width=320, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@1292572, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x1 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Type text here… label=null packageName=null fieldId=0 fieldName=null extras=null ], x=176.0, y=0.0, text=, hint=Type text here…, input-type=1, ime-target=false, has-links=false} 
+|
++---------->AppCompatTextView{id=-1, visibility=VISIBLE, width=512, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@19ddc3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=40.0, y=494.0, text=LES, input-type=0, ime-target=false, has-links=false} 
+|
++---------->LinearLayout{id=-1, visibility=VISIBLE, width=528, height=219, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@4670640, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=548.0, child-count=2} 
+|
++----------->AppCompatEditText{id=2131361873, res-name=debugMessageActionEdt, visibility=VISIBLE, width=496, height=91, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@9455979, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x1 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Type text here… label=null packageName=null fieldId=0 fieldName=null extras=null ], x=16.0, y=16.0, text=, hint=Type text here…, input-type=1, ime-target=false, has-links=false} 
+|
++----------->AppCompatButton{id=2131361878, res-name=debugSendMessageBtn, visibility=VISIBLE, width=255, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@6026be, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=107.0, text=Send message, input-type=0, ime-target=false, has-links=false} 
+|
++---------->LinearLayout{id=-1, visibility=VISIBLE, width=528, height=478, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@9b2931f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=799.0, child-count=3} 
+|
++----------->AppCompatEditText{id=2131361871, res-name=debugCommandActionEdt, visibility=VISIBLE, width=496, height=91, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@2d6466c, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x1 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Action, e.g. SHOW_BLIK label=null packageName=null fieldId=0 fieldName=null extras=null ], x=16.0, y=16.0, text=, hint=Action, e.g. SHOW_BLIK, input-type=1, ime-target=false, has-links=false} 
+|
++----------->AppCompatEditText{id=2131361872, res-name=debugCommandPayloadEdt, visibility=VISIBLE, width=496, height=259, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@2391435, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x20001 imeOptions=0x48000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Payload, e.g. { "blik" : "012345", "new" : false } label=null packageName=null fieldId=0 fieldName=null extras=null ], x=16.0, y=107.0, text=, hint=Payload, e.g.
+{
+"blik" : "012345",
+"new" : false
+}, input-type=131073, ime-target=false, has-links=false} 
+|
++----------->AppCompatButton{id=2131361877, res-name=debugSendCommandBtn, visibility=VISIBLE, width=270, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@c73f0ca, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=366.0, text=Send Command, input-type=0, ime-target=false, has-links=false} 
+|
++---------->AppCompatTextView{id=-1, visibility=VISIBLE, width=512, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@6f7423b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=40.0, y=1293.0, text=LOGS, input-type=0, ime-target=false, has-links=false} 
+|
++---------->LinearLayout{id=-1, visibility=VISIBLE, width=528, height=640, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@2175d58, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=1347.0, child-count=2} 
+|
++----------->NestedScrollView{id=-1, visibility=VISIBLE, width=496, height=512, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@c73beb1, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=16.0, child-count=1} 
+|
++------------>Console{id=-1, visibility=VISIBLE, width=496, height=9971, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@f484f96, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++------------->ScrollView{id=2131361861, res-name=console_scroll_view, visibility=VISIBLE, width=496, height=9971, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@e0dc717, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++-------------->AppCompatTextView{id=2131361862, res-name=console_text, visibility=VISIBLE, width=496, height=9971, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=true, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@150f704, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=D/VisServiceProvider: DialogueHistoryResponse -> next [].
+I/VisServiceProvider: DialogueHistoryResponse -> completed.
+D/VisServiceProvider: # lekta.vis.Vis$DialogueOutputStream@4547429c
+dialogue_output {
+  output {
+    answer: "Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. "
+    context: "{\"app\":{\"suggestions\":[\"Sprawd\305\272 stan konta\",\"Ostatnie transakcje\",\"Zr\303\263b przelew\"]},\"fluency\":{\"continuedConversation\":true},\"voice\":{\"ASR\":{\"recognition-timeout\":10000,\"speech-complete-timeout\":2500},\"TTS\":{\"secondAnswer\":\"<speak>Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. </speak>\"}}}"
+    id: "e947cb08-26ce-4083-8511-b6ecc934ad70"
+    interface: WRITTEN
+    interface_value: 1
+    language: "pl-PL"
+    operation: "Fluency"
+  }
+}
+D/VisServiceProvider: DialogueHistoryResponse -> next [].
+I/VisServiceProvider: DialogueHistoryResponse -> completed.
+D/VisServiceProvider: # lekta.vis.Vis$DialogueOutputStream@b2b9c5ce
+dialogue_output {
+  output {
+    answer: "Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. "
+    context: "{\"app\":{\"suggestions\":[\"Sprawd\305\272 stan konta\",\"Ostatnie transakcje\",\"Zr\303\263b przelew\"]},\"fluency\":{\"continuedConversation\":true},\"voice\":{\"ASR\":{\"recognition-timeout\":10000,\"speech-complete-timeout\":2500},\"TTS\":{\"secondAnswer\":\"<speak>Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. </speak>\"}}}"
+    id: "a4c5a7aa-fe4d-4f5c-bdac-74c34fe12602"
+    interface: WRITTEN
+    interface_value: 1
+    language: "pl-PL"
+    operation: "Fluency"
+  }
+}
+D/VisServiceProvider: DialogueHistoryResponse -> next [].
+I/VisServiceProvider: DialogueHistoryResponse -> completed.
+D/VisServiceProvider: # lekta.vis.Vis$DialogueOutputStream@521a0b35
+dialogue_output {
+  output {
+    answer: "Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. "
+    context: "{\"app\":{\"suggestions\":[\"Sprawd\305\272 stan konta\",\"Ostatnie transakcje\",\"Zr\303\263b przelew\"]},\"fluency\":{\"continuedConversation\":true},\"voice\":{\"ASR\":{\"recognition-timeout\":10000,\"speech-complete-timeout\":2500},\"TTS\":{\"secondAnswer\":\"<speak>Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. </speak>\"}}}"
+    id: "112d24bc-6e15-4113-9cee-3ed72ef66bf3"
+    interface: WRITTEN
+    interface_value: 1
+    language: "pl-PL"
+    operation: "Fluency"
+  }
+}
+D/VisServiceProvider: DialogueHistoryResponse -> next [].
+I/VisServiceProvider: DialogueHistoryResponse -> completed.
+D/VisServiceProvider: # lekta.vis.Vis$DialogueOutputStream@2bfde0b4
+dialogue_output {
+  output {
+    answer: "Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. "
+    context: "{\"app\":{\"suggestions\":[\"Sprawd\305\272 stan konta\",\"Ostatnie transakcje\",\"Zr\303\263b przelew\"]},\"fluency\":{\"continuedConversation\":true},\"voice\":{\"ASR\":{\"recognition-timeout\":10000,\"speech-complete-timeout\":2500},\"TTS\":{\"secondAnswer\":\"<speak>Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. </speak>\"}}}"
+    id: "2e417fb1-3688-41ba-8d1b-a5eead33520a"
+    interface: WRITTEN
+    interface_value: 1
+    language: "pl-PL"
+    operation: "Fluency"
+  }
+}
+D/VisServiceProvider: DialogueHistoryResponse -> next [].
+I/VisServiceProvider: DialogueHistoryResponse -> completed.
+D/VisServiceProvider: # lekta.vis.Vis$DialogueOutputStream@54144aa1
+dialogue_output {
+  output {
+    answer: "Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. "
+    context: "{\"app\":{\"suggestions\":[\"Sprawd\305\272 stan konta\",\"Ostatnie transakcje\",\"Zr\303\263b przelew\"]},\"fluency\":{\"continuedConversation\":true},\"voice\":{\"ASR\":{\"recognition-timeout\":10000,\"speech-complete-timeout\":2500},\"TTS\":{\"secondAnswer\":\"<speak>Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. </speak>\"}}}"
+    id: "06aa13e0-14b6-4a8a-83cd-8db75e4cc9a9"
+    interface: WRITTEN
+    interface_value: 1
+    language: "pl-PL"
+    operation: "Fluency"
+  }
+}
+D/VisServiceProvider: DialogueHistoryResponse -> next [].
+I/VisServiceProvider: DialogueHistoryResponse -> completed.
+D/VisServiceProvider: # lekta.vis.Vis$DialogueOutputStream@4a4cee01
+dialogue_output {
+  output {
+    answer: "Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. "
+    context: "{\"app\":{\"suggestions\":[\"Sprawd\305\272 stan konta\",\"Ostatnie transakcje\",\"Zr\303\263b przelew\"]},\"fluency\":{\"continuedConversation\":true},\"voice\":{\"ASR\":{\"recognition-timeout\":10000,\"speech-complete-timeout\":2500},\"TTS\":{\"secondAnswer\":\"<speak>Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. </speak>\"}}}"
+    id: "71c9fcdc-a7e4-43b5-8e7b-d31a832716dc"
+    interface: WRITTEN
+    interface_value: 1
+    language: "pl-PL"
+    operation: "Fluency"
+  }
+}
+I/VisServiceProvider: DialogueOpenedStream -> completed.
+D/VisServiceProvider: # lekta.vis.Vis$DialogueOutputStream@5bbb7348
+dialogue_output {
+  output {
+    answer: "Podaj numer telefonu lub nazw\304\231 odbiorcy do\305\202adowania. "
+    context: "{\"app\":{\"suggestions\":[],\"widgets\":[{\"metadata\":{\"clickable\":true,\"list\":[{\"favouriteId\":11111,\"msisdn\":\"48884504885\",\"name\":\"Joanna Butrymowicz\"},{\"favouriteId\":22222,\"msisdn\":\"48663462367\",\"name\":\"Przemys\305\202aw Grochowski\"},{\"favouriteId\":33333,\"msisdn\":\"48678923130\",\"name\":\"Ma\305\202gorzata Dunajewska\"}],\"phoneBookButton\":{\"action\":{\"redirect\":\"WIDGET_PHONE_BOOK\"}},\"showMoreButton\":{\"action\":{\"redirect\":\"WIDGET_BENEFICIARY_FAVOURITE_LIST\"}}},\"type\":7}]},\"fluency\":{\"continuedConversation\":true},\"voice\":{\"ASR\":{\"recognition-timeout\":10000,\"speech-complete-timeout\":2500},\"TTS\":{\"secondAnswer\":\"<speak>Podaj numer telefonu lub nazw\304\231 odbiorcy do\305\202adowania. </speak>\"}}}"
+    id: "71c9fcdc-a7e4-43b5-8e7b-d31a832716dc"
+    interface: WRITTEN
+    interface_value: 1
+    language: "pl-PL"
+    operation: "Fluency"
+  }
+}
+, input-type=0, ime-target=true, has-links=false} 
+|
++----------->AppCompatButton{id=2131361870, res-name=debugClearConsoleBtn, visibility=VISIBLE, width=176, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@bd494ed, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=528.0, text=Clear, input-type=0, ime-target=false, has-links=false} 
+|
++->View{id=16908336, res-name=navigationBarBackground, visibility=VISIBLE, width=720, height=93, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@b31cf22, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=1187.0} 
+|
++->View{id=16908335, res-name=statusBarBackground, visibility=VISIBLE, width=720, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@79dbdb3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+|
+	at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+	at java.lang.Thread.getStackTrace(Thread.java:580)
+	at android.support.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:88)
+	at android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:51)
+	at android.support.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:312)
+	at android.support.test.espresso.ViewInteraction.desugaredPerform(ViewInteraction.java:173)
+	at android.support.test.espresso.ViewInteraction.perform(ViewInteraction.java:114)
+	at ai.lekta.sdk.demo.greenpath.DoladowanieTelefonu.greenPathDoladowanieTelefonu(DoladowanieTelefonu.java:150)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:527)
+	at android.support.test.rule.GrantPermissionRule$RequestPermissionStatement.evaluate(GrantPermissionRule.java:129)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at android.support.test.runner.AndroidJUnit4.run(AndroidJUnit4.java:101)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:56)
+	at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:384)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1886)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=greenPathDoladowanieTelefonu
+INSTRUMENTATION_STATUS: class=ai.lekta.sdk.demo.greenpath.DoladowanieTelefonu
+INSTRUMENTATION_STATUS: stack=android.support.test.espresso.AmbiguousViewMatcherException: '(with id: ai.lekta.sdk.demo:id/messageTv and with text: is " " and is displayed on the screen to the user)' matches multiple views in the hierarchy.
+Problem views are marked with '****MATCHES****' below.
+
+View Hierarchy:
++>DecorView{id=-1, visibility=VISIBLE, width=720, height=1280, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=WM.LayoutParams{(0,0)(fillxfill) ty=1 fl=#81810100 wanim=0x103045b needsMenuKey=2 clr=0x1}, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3} 
+|
++->LinearLayout{id=-1, visibility=VISIBLE, width=720, height=1187, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@18b5898, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++-->ViewStub{id=16909220, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@ae338f1, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+|
++-->FrameLayout{id=-1, visibility=VISIBLE, width=720, height=1139, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@97edcd6, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=48.0, child-count=1} 
+|
++--->FitWindowsLinearLayout{id=2131361806, res-name=action_bar_root, visibility=VISIBLE, width=720, height=1139, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@5296644, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++---->ViewStubCompat{id=2131361817, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@c61732d, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+|
++---->ContentFrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=720, height=1139, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@863f062, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++----->FrameLayout{id=2131361863, res-name=container, visibility=VISIBLE, width=720, height=1139, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@39765f3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++------>DrawerLayout{id=2131361822, res-name=activity_main, visibility=VISIBLE, width=720, height=1139, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@578a2b0, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=1139, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v4.widget.DrawerLayout$LayoutParams@794b0ae, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=6} 
+|
++-------->ConstraintLayout{id=2131362084, res-name=toolbarLayout, visibility=VISIBLE, width=720, height=144, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@cb86e4f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++--------->AppCompatTextView{id=2131361889, res-name=dialogueIdTv, visibility=VISIBLE, width=506, height=71, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@c3d39dc, tag=null, root-is-layout-requested=false, has-input-connection=false, x=107.0, y=37.0, text=71c9fcdc-a7e4-43b5-8e7b-d31a832716dc, input-type=0, ime-target=false, has-links=false} 
+|
++--------->AppCompatImageView{id=2131361858, res-name=closeBtn, visibility=VISIBLE, width=96, height=96, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@9dadae5, tag=null, root-is-layout-requested=false, has-input-connection=false, x=608.0, y=24.0} 
+|
++-------->RecyclerView{id=2131361853, res-name=chatList, visibility=VISIBLE, width=720, height=819, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@2ff29ba, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=144.0, child-count=7} 
+|
++--------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=443, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@537a06b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=-416.0, child-count=1} 
+|
++---------->AppCompatTextView{id=2131361960, res-name=messageTv, visibility=VISIBLE, width=544, height=443, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@95217c8, tag=null, root-is-layout-requested=false, has-input-connection=false, x=48.0, y=0.0, text=Zmieniam kwotę doładowania na 25,00 PLN. Potwierdź dane: doładowanie telefonu z: Konto bez granic 89 (...) 0940 5731, numer telefonu: +48 505 235 221, operator: Play, kwota: 25,00 PLN. Imię i nazwisko: ANTONI FABRYKA, e-mail: antoni.fabryka@fakemail.com. Czy wszystko się zgadza? , input-type=0, ime-target=false, has-links=false} 
+|
++--------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=81, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@7e34061, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=59.0, child-count=1} 
+|
++---------->AppCompatTextView{id=2131361960, res-name=messageTv, visibility=VISIBLE, width=100, height=81, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@5662786, tag=null, root-is-layout-requested=false, has-input-connection=false, x=572.0, y=0.0, text=Tak, input-type=0, ime-target=false, has-links=false} 
+|
++--------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=81, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@42dd847, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=172.0, child-count=1} 
+|
++---------->AppCompatTextView{id=2131361960, res-name=messageTv, visibility=VISIBLE, width=56, height=81, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@d54e874, tag=null, root-is-layout-requested=false, has-input-connection=false, x=48.0, y=0.0, text= , input-type=0, ime-target=false, has-links=false} ****MATCHES****
+|
++--------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=81, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@9b2819d, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=285.0, child-count=1} 
+|
++---------->AppCompatTextView{id=2131361960, res-name=messageTv, visibility=VISIBLE, width=100, height=81, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@ed3612, tag=null, root-is-layout-requested=false, has-input-connection=false, x=572.0, y=0.0, text=Tak, input-type=0, ime-target=false, has-links=false} 
+|
++--------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=163, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@f65b1e3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=398.0, child-count=1} 
+|
++---------->AppCompatTextView{id=2131361960, res-name=messageTv, visibility=VISIBLE, width=544, height=163, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@31217e0, tag=null, root-is-layout-requested=false, has-input-connection=false, x=48.0, y=0.0, text=Dla bezpieczeństwa potwierdź doładowanie. Wpisz kod PIN do aplikacji. , input-type=0, ime-target=false, has-links=false} 
+|
++--------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=81, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@93a9a99, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=593.0, child-count=1} 
+|
++---------->AppCompatTextView{id=2131361960, res-name=messageTv, visibility=VISIBLE, width=115, height=81, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@464a15e, tag=null, root-is-layout-requested=false, has-input-connection=false, x=557.0, y=0.0, text=1234, input-type=0, ime-target=false, has-links=false} 
+|
++--------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=81, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@4b7893f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=706.0, child-count=1} 
+|
++---------->AppCompatTextView{id=2131361960, res-name=messageTv, visibility=VISIBLE, width=56, height=81, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@3b0d20c, tag=null, root-is-layout-requested=false, has-input-connection=false, x=48.0, y=0.0, text= , input-type=0, ime-target=false, has-links=false} ****MATCHES****
+|
++-------->AppCompatTextView{id=2131361972, res-name=noConnectionLayout, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@3914755, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=Connection lost. Trying to reconnect…, input-type=0, ime-target=false, has-links=false} 
+|
++-------->View{id=2131362087, res-name=topShadow, visibility=VISIBLE, width=720, height=2, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@955756a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=144.0} 
+|
++-------->View{id=2131361843, res-name=bottomShadow, visibility=VISIBLE, width=720, height=2, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@d257a5b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=961.0} 
+|
++-------->ConstraintLayout{id=2131361932, res-name=inputLayout, visibility=VISIBLE, width=720, height=176, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@76c03d1, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=963.0, child-count=6} 
+|
++--------->AppCompatImageView{id=2131361967, res-name=muteBtn, visibility=VISIBLE, width=96, height=96, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@6cd7e36, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=40.0} 
+|
++--------->AppCompatImageView{id=2131362035, res-name=showTextInterfaceBtn, desc=Show text input icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@5b76137, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+|
++--------->AppCompatImageView{id=2131362037, res-name=showVoiceInterfaceBtn, desc=Show voice input icon, visibility=VISIBLE, width=96, height=96, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@63d56a4, tag=null, root-is-layout-requested=false, has-input-connection=false, x=122.0, y=40.0} 
+|
++--------->AppCompatEditText{id=2131361931, res-name=input, visibility=VISIBLE, width=378, height=81, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@4eb47c2, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x24001 imeOptions=0x44000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x2000 hintText=Start typing here… label=null packageName=null fieldId=0 fieldName=null extras=null ], x=218.0, y=48.0, text=, hint=Start typing here…, input-type=147457, ime-target=false, has-links=false} 
+|
++--------->AppCompatImageView{id=2131362031, res-name=sendBtn, visibility=VISIBLE, width=96, height=96, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@a16d9d3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=608.0, y=40.0} 
+|
++--------->AppCompatImageView{id=2131362045, res-name=speakBtn, visibility=INVISIBLE, width=128, height=128, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@e4b3910, tag=null, root-is-layout-requested=false, has-input-connection=false, x=296.0, y=24.0} 
+|
++------->NavigationView{id=-1, visibility=INVISIBLE, width=592, height=1139, has-focus=true, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v4.widget.DrawerLayout$LayoutParams@3ca5c09, tag=null, root-is-layout-requested=false, has-input-connection=false, x=-592.0, y=0.0, child-count=2} 
+|
++-------->NavigationMenuView{id=2131361888, res-name=design_navigation_view, visibility=VISIBLE, width=592, height=1139, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@d2a1e0e, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++--------->LinearLayout{id=2131361970, res-name=navigation_header_container, visibility=VISIBLE, width=592, height=16, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@ceb402f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=0} 
+|
++-------->ScrollView{id=-1, visibility=VISIBLE, width=592, height=1139, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@112d63c, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++--------->LinearLayout{id=-1, visibility=VISIBLE, width=592, height=2035, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@b3afc5, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=10} 
+|
++---------->AppCompatTextView{id=-1, visibility=VISIBLE, width=512, height=49, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@36e0d1a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=40.0, y=32.0, text=Demo SDK Developer menu, input-type=0, ime-target=false, has-links=false} 
+|
++---------->AppCompatTextView{id=2131362018, res-name=sdkVersion, visibility=VISIBLE, width=512, height=49, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@9f5b04b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=40.0, y=81.0, text=0.8.4 debug, input-type=0, ime-target=false, has-links=false} 
+|
++---------->AppCompatTextView{id=2131361995, res-name=pingDelay, visibility=VISIBLE, width=512, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@e551a28, tag=null, root-is-layout-requested=false, has-input-connection=false, x=40.0, y=146.0, text=Delay: 108ms, input-type=0, ime-target=false, has-links=false} 
+|
++---------->AppCompatTextView{id=-1, visibility=VISIBLE, width=512, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@b248341, tag=null, root-is-layout-requested=false, has-input-connection=false, x=40.0, y=200.0, text=TTS, input-type=0, ime-target=false, has-links=false} 
+|
++---------->LinearLayout{id=-1, visibility=VISIBLE, width=528, height=224, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@3cfe0e6, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=254.0, child-count=2} 
+|
++----------->AppCompatButton{id=2131361874, res-name=debugSayLongTextBtn, visibility=VISIBLE, width=253, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@ded0627, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=16.0, text=Say long text, input-type=0, ime-target=false, has-links=false} 
+|
++----------->LinearLayout{id=-1, visibility=VISIBLE, width=496, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@ef5b0d4, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=112.0, child-count=2} 
+|
++------------>AppCompatButton{id=2131361875, res-name=debugSayTextBtn, visibility=VISIBLE, width=176, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@275127d, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=Say, input-type=0, ime-target=false, has-links=false} 
+|
++------------>AppCompatEditText{id=2131361876, res-name=debugSayTextEdt, visibility=VISIBLE, width=320, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@1292572, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x1 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Type text here… label=null packageName=null fieldId=0 fieldName=null extras=null ], x=176.0, y=0.0, text=, hint=Type text here…, input-type=1, ime-target=false, has-links=false} 
+|
++---------->AppCompatTextView{id=-1, visibility=VISIBLE, width=512, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@19ddc3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=40.0, y=494.0, text=LES, input-type=0, ime-target=false, has-links=false} 
+|
++---------->LinearLayout{id=-1, visibility=VISIBLE, width=528, height=219, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@4670640, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=548.0, child-count=2} 
+|
++----------->AppCompatEditText{id=2131361873, res-name=debugMessageActionEdt, visibility=VISIBLE, width=496, height=91, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@9455979, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x1 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Type text here… label=null packageName=null fieldId=0 fieldName=null extras=null ], x=16.0, y=16.0, text=, hint=Type text here…, input-type=1, ime-target=false, has-links=false} 
+|
++----------->AppCompatButton{id=2131361878, res-name=debugSendMessageBtn, visibility=VISIBLE, width=255, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@6026be, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=107.0, text=Send message, input-type=0, ime-target=false, has-links=false} 
+|
++---------->LinearLayout{id=-1, visibility=VISIBLE, width=528, height=478, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@9b2931f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=799.0, child-count=3} 
+|
++----------->AppCompatEditText{id=2131361871, res-name=debugCommandActionEdt, visibility=VISIBLE, width=496, height=91, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@2d6466c, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x1 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Action, e.g. SHOW_BLIK label=null packageName=null fieldId=0 fieldName=null extras=null ], x=16.0, y=16.0, text=, hint=Action, e.g. SHOW_BLIK, input-type=1, ime-target=false, has-links=false} 
+|
++----------->AppCompatEditText{id=2131361872, res-name=debugCommandPayloadEdt, visibility=VISIBLE, width=496, height=259, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@2391435, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x20001 imeOptions=0x48000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Payload, e.g. { "blik" : "012345", "new" : false } label=null packageName=null fieldId=0 fieldName=null extras=null ], x=16.0, y=107.0, text=, hint=Payload, e.g.
+{
+"blik" : "012345",
+"new" : false
+}, input-type=131073, ime-target=false, has-links=false} 
+|
++----------->AppCompatButton{id=2131361877, res-name=debugSendCommandBtn, visibility=VISIBLE, width=270, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@c73f0ca, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=366.0, text=Send Command, input-type=0, ime-target=false, has-links=false} 
+|
++---------->AppCompatTextView{id=-1, visibility=VISIBLE, width=512, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@6f7423b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=40.0, y=1293.0, text=LOGS, input-type=0, ime-target=false, has-links=false} 
+|
++---------->LinearLayout{id=-1, visibility=VISIBLE, width=528, height=640, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@2175d58, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=1347.0, child-count=2} 
+|
++----------->NestedScrollView{id=-1, visibility=VISIBLE, width=496, height=512, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@c73beb1, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=16.0, child-count=1} 
+|
++------------>Console{id=-1, visibility=VISIBLE, width=496, height=9971, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@f484f96, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++------------->ScrollView{id=2131361861, res-name=console_scroll_view, visibility=VISIBLE, width=496, height=9971, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@e0dc717, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++-------------->AppCompatTextView{id=2131361862, res-name=cons
+
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=16
+INSTRUMENTATION_STATUS: stream=
+ai.lekta.sdk.demo.greenpath.FAQ:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=greenPathFAQ
+INSTRUMENTATION_STATUS: class=ai.lekta.sdk.demo.greenpath.FAQ
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=16
+INSTRUMENTATION_STATUS: stream=
+Error in greenPathFAQ(ai.lekta.sdk.demo.greenpath.FAQ):
+android.support.test.espresso.NoMatchingViewException: No views in hierarchy found matching: (with id: ai.lekta.sdk.demo:id/messageTv and with text: is "Jak mam dodać odbiorcę zdefiniowanego?" and is displayed on the screen to the user)
+
+View Hierarchy:
++>DecorView{id=-1, visibility=VISIBLE, width=720, height=1280, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=WM.LayoutParams{(0,0)(fillxfill) ty=1 fl=#81810100 wanim=0x103045b needsMenuKey=2 clr=0x1}, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3} 
+|
++->LinearLayout{id=-1, visibility=VISIBLE, width=720, height=1187, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@7234886, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++-->ViewStub{id=16909220, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@7c2e547, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+|
++-->FrameLayout{id=-1, visibility=VISIBLE, width=720, height=1139, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@bc17174, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=48.0, child-count=1} 
+|
++--->FitWindowsLinearLayout{id=2131361806, res-name=action_bar_root, visibility=VISIBLE, width=720, height=1139, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@7db6712, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++---->ViewStubCompat{id=2131361817, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@bbe8ee3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+|
++---->ContentFrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=720, height=1139, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@63e30e0, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++----->FrameLayout{id=2131361863, res-name=container, visibility=VISIBLE, width=720, height=1139, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@89f3f99, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++------>DrawerLayout{id=2131361822, res-name=activity_main, visibility=VISIBLE, width=720, height=1139, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@a84e25e, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=1139, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v4.widget.DrawerLayout$LayoutParams@57b0c, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=6} 
+|
++-------->ConstraintLayout{id=2131362084, res-name=toolbarLayout, visibility=VISIBLE, width=720, height=144, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@51b3c55, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++--------->AppCompatTextView{id=2131361889, res-name=dialogueIdTv, visibility=VISIBLE, width=483, height=71, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@7b8c66a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=119.0, y=37.0, text=3e53be1f-0472-41e6-900a-190bdf7781f1, input-type=0, ime-target=false, has-links=false} 
+|
++--------->AppCompatImageView{id=2131361858, res-name=closeBtn, visibility=VISIBLE, width=96, height=96, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@61cf75b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=608.0, y=24.0} 
+|
++-------->RecyclerView{id=2131361853, res-name=chatList, visibility=VISIBLE, width=720, height=819, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@9153bf8, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=144.0, child-count=4} 
+|
++--------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=123, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@2048d1, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=-121.0, child-count=1} 
+|
++---------->AppCompatTextView{id=2131361960, res-name=messageTv, visibility=VISIBLE, width=544, height=123, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@694df36, tag=null, root-is-layout-requested=false, has-input-connection=false, x=128.0, y=0.0, text=Gdzie znajdę potwierdzenie przelewu?, input-type=0, ime-target=false, has-links=false} 
+|
++--------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=443, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@329ae37, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=34.0, child-count=1} 
+|
++---------->AppCompatTextView{id=2131361960, res-name=messageTv, visibility=VISIBLE, width=544, height=443, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@15e1fa4, tag=null, root-is-layout-requested=false, has-input-connection=false, x=48.0, y=0.0, text=1. Wejdź w szczegóły operacji, dla której potrzebujesz potwierdzenie. 2. W prawym górnym rogu kliknij ikonę z trzema kropkami, a następnie wybierz “Generuj potwierdzenie”. 3. Po wyświetleniu potwierdzenia możesz kliknąć ikonę udostępniania, by wysłać potwierdzenie. , input-type=0, ime-target=false, has-links=false} 
+|
++--------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=123, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@f8fa10d, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=509.0, child-count=1} 
+|
++---------->AppCompatTextView{id=2131361960, res-name=messageTv, visibility=VISIBLE, width=544, height=123, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@47b8c2, tag=null, root-is-layout-requested=false, has-input-connection=false, x=128.0, y=0.0, text=Jak mam dodać/zmienić odbiorcę zdefiniowanego?, input-type=0, ime-target=false, has-links=false} 
+|
++--------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=123, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@e0f6d3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=664.0, child-count=1} 
+|
++---------->AppCompatTextView{id=2131361960, res-name=messageTv, visibility=VISIBLE, width=544, height=123, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@52f9210, tag=null, root-is-layout-requested=false, has-input-connection=false, x=48.0, y=0.0, text=Niestety, nie zrozumiałam. Wpisz tekst raz jeszcze. , input-type=0, ime-target=false, has-links=false} 
+|
++-------->AppCompatTextView{id=2131361972, res-name=noConnectionLayout, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@c224109, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=Connection lost. Trying to reconnect…, input-type=0, ime-target=false, has-links=false} 
+|
++-------->View{id=2131362087, res-name=topShadow, visibility=VISIBLE, width=720, height=2, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@5c9f0e, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=144.0} 
+|
++-------->View{id=2131361843, res-name=bottomShadow, visibility=VISIBLE, width=720, height=2, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@2ba2d2f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=961.0} 
+|
++-------->ConstraintLayout{id=2131361932, res-name=inputLayout, visibility=VISIBLE, width=720, height=176, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@724e4c5, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=963.0, child-count=6} 
+|
++--------->AppCompatImageView{id=2131361967, res-name=muteBtn, visibility=VISIBLE, width=96, height=96, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@dc79e1a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=40.0} 
+|
++--------->AppCompatImageView{id=2131362035, res-name=showTextInterfaceBtn, desc=Show text input icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@2466d4b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+|
++--------->AppCompatImageView{id=2131362037, res-name=showVoiceInterfaceBtn, desc=Show voice input icon, visibility=VISIBLE, width=96, height=96, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@4b9328, tag=null, root-is-layout-requested=false, has-input-connection=false, x=122.0, y=40.0} 
+|
++--------->AppCompatEditText{id=2131361931, res-name=input, visibility=VISIBLE, width=378, height=81, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@ff40841, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x24001 imeOptions=0x44000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x2000 hintText=Start typing here… label=null packageName=null fieldId=0 fieldName=null extras=null ], x=218.0, y=48.0, text=, hint=Start typing here…, input-type=147457, ime-target=false, has-links=false} 
+|
++--------->AppCompatImageView{id=2131362031, res-name=sendBtn, visibility=VISIBLE, width=96, height=96, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@8b181e6, tag=null, root-is-layout-requested=false, has-input-connection=false, x=608.0, y=40.0} 
+|
++--------->AppCompatImageView{id=2131362045, res-name=speakBtn, visibility=INVISIBLE, width=128, height=128, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@70c9327, tag=null, root-is-layout-requested=false, has-input-connection=false, x=296.0, y=24.0} 
+|
++------->NavigationView{id=-1, visibility=INVISIBLE, width=592, height=1139, has-focus=true, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v4.widget.DrawerLayout$LayoutParams@c5ab9d4, tag=null, root-is-layout-requested=false, has-input-connection=false, x=-592.0, y=0.0, child-count=2} 
+|
++-------->NavigationMenuView{id=2131361888, res-name=design_navigation_view, visibility=VISIBLE, width=592, height=1139, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@537e77d, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++--------->LinearLayout{id=2131361970, res-name=navigation_header_container, visibility=VISIBLE, width=592, height=16, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@903d672, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=0} 
+|
++-------->ScrollView{id=-1, visibility=VISIBLE, width=592, height=1139, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@253ac3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++--------->LinearLayout{id=-1, visibility=VISIBLE, width=592, height=2035, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@d939f40, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=10} 
+|
++---------->AppCompatTextView{id=-1, visibility=VISIBLE, width=512, height=49, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@de07e79, tag=null, root-is-layout-requested=false, has-input-connection=false, x=40.0, y=32.0, text=Demo SDK Developer menu, input-type=0, ime-target=false, has-links=false} 
+|
++---------->AppCompatTextView{id=2131362018, res-name=sdkVersion, visibility=VISIBLE, width=512, height=49, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@9b4e7be, tag=null, root-is-layout-requested=false, has-input-connection=false, x=40.0, y=81.0, text=0.8.4 debug, input-type=0, ime-target=false, has-links=false} 
+|
++---------->AppCompatTextView{id=2131361995, res-name=pingDelay, visibility=VISIBLE, width=512, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@b96c01f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=40.0, y=146.0, text=Delay: 144ms, input-type=0, ime-target=false, has-links=false} 
+|
++---------->AppCompatTextView{id=-1, visibility=VISIBLE, width=512, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@4b36f6c, tag=null, root-is-layout-requested=false, has-input-connection=false, x=40.0, y=200.0, text=TTS, input-type=0, ime-target=false, has-links=false} 
+|
++---------->LinearLayout{id=-1, visibility=VISIBLE, width=528, height=224, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@5e18935, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=254.0, child-count=2} 
+|
++----------->AppCompatButton{id=2131361874, res-name=debugSayLongTextBtn, visibility=VISIBLE, width=253, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@cd3c1ca, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=16.0, text=Say long text, input-type=0, ime-target=false, has-links=false} 
+|
++----------->LinearLayout{id=-1, visibility=VISIBLE, width=496, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@7713f3b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=112.0, child-count=2} 
+|
++------------>AppCompatButton{id=2131361875, res-name=debugSayTextBtn, visibility=VISIBLE, width=176, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@f1e1658, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=Say, input-type=0, ime-target=false, has-links=false} 
+|
++------------>AppCompatEditText{id=2131361876, res-name=debugSayTextEdt, visibility=VISIBLE, width=320, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@aae83b1, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x1 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Type text here… label=null packageName=null fieldId=0 fieldName=null extras=null ], x=176.0, y=0.0, text=, hint=Type text here…, input-type=1, ime-target=false, has-links=false} 
+|
++---------->AppCompatTextView{id=-1, visibility=VISIBLE, width=512, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@4543096, tag=null, root-is-layout-requested=false, has-input-connection=false, x=40.0, y=494.0, text=LES, input-type=0, ime-target=false, has-links=false} 
+|
++---------->LinearLayout{id=-1, visibility=VISIBLE, width=528, height=219, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@8aa9417, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=548.0, child-count=2} 
+|
++----------->AppCompatEditText{id=2131361873, res-name=debugMessageActionEdt, visibility=VISIBLE, width=496, height=91, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@a8a4004, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x1 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Type text here… label=null packageName=null fieldId=0 fieldName=null extras=null ], x=16.0, y=16.0, text=, hint=Type text here…, input-type=1, ime-target=false, has-links=false} 
+|
++----------->AppCompatButton{id=2131361878, res-name=debugSendMessageBtn, visibility=VISIBLE, width=255, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@376a9ed, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=107.0, text=Send message, input-type=0, ime-target=false, has-links=false} 
+|
++---------->LinearLayout{id=-1, visibility=VISIBLE, width=528, height=478, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@b9ac022, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=799.0, child-count=3} 
+|
++----------->AppCompatEditText{id=2131361871, res-name=debugCommandActionEdt, visibility=VISIBLE, width=496, height=91, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@3ba5ab3, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x1 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Action, e.g. SHOW_BLIK label=null packageName=null fieldId=0 fieldName=null extras=null ], x=16.0, y=16.0, text=, hint=Action, e.g. SHOW_BLIK, input-type=1, ime-target=false, has-links=false} 
+|
++----------->AppCompatEditText{id=2131361872, res-name=debugCommandPayloadEdt, visibility=VISIBLE, width=496, height=259, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@76d5870, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x20001 imeOptions=0x48000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Payload, e.g. { "blik" : "012345", "new" : false } label=null packageName=null fieldId=0 fieldName=null extras=null ], x=16.0, y=107.0, text=, hint=Payload, e.g.
+{
+"blik" : "012345",
+"new" : false
+}, input-type=131073, ime-target=false, has-links=false} 
+|
++----------->AppCompatButton{id=2131361877, res-name=debugSendCommandBtn, visibility=VISIBLE, width=270, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@120f7e9, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=366.0, text=Send Command, input-type=0, ime-target=false, has-links=false} 
+|
++---------->AppCompatTextView{id=-1, visibility=VISIBLE, width=512, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@dc8bc6e, tag=null, root-is-layout-requested=false, has-input-connection=false, x=40.0, y=1293.0, text=LOGS, input-type=0, ime-target=false, has-links=false} 
+|
++---------->LinearLayout{id=-1, visibility=VISIBLE, width=528, height=640, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@2f5ef0f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=1347.0, child-count=2} 
+|
++----------->NestedScrollView{id=-1, visibility=VISIBLE, width=496, height=512, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@6278b9c, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=16.0, child-count=1} 
+|
++------------>Console{id=-1, visibility=VISIBLE, width=496, height=12677, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@20829a5, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++------------->ScrollView{id=2131361861, res-name=console_scroll_view, visibility=VISIBLE, width=496, height=12677, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@4c8317a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++-------------->AppCompatTextView{id=2131361862, res-name=console_text, visibility=VISIBLE, width=496, height=12677, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=true, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@6ac6d2b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=D/VisServiceProvider: DialogueHistoryResponse -> next [].
+I/VisServiceProvider: DialogueHistoryResponse -> completed.
+D/VisServiceProvider: # lekta.vis.Vis$DialogueOutputStream@4547429c
+dialogue_output {
+  output {
+    answer: "Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. "
+    context: "{\"app\":{\"suggestions\":[\"Sprawd\305\272 stan konta\",\"Ostatnie transakcje\",\"Zr\303\263b przelew\"]},\"fluency\":{\"continuedConversation\":true},\"voice\":{\"ASR\":{\"recognition-timeout\":10000,\"speech-complete-timeout\":2500},\"TTS\":{\"secondAnswer\":\"<speak>Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. </speak>\"}}}"
+    id: "e947cb08-26ce-4083-8511-b6ecc934ad70"
+    interface: WRITTEN
+    interface_value: 1
+    language: "pl-PL"
+    operation: "Fluency"
+  }
+}
+D/VisServiceProvider: DialogueHistoryResponse -> next [].
+I/VisServiceProvider: DialogueHistoryResponse -> completed.
+D/VisServiceProvider: # lekta.vis.Vis$DialogueOutputStream@b2b9c5ce
+dialogue_output {
+  output {
+    answer: "Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. "
+    context: "{\"app\":{\"suggestions\":[\"Sprawd\305\272 stan konta\",\"Ostatnie transakcje\",\"Zr\303\263b przelew\"]},\"fluency\":{\"continuedConversation\":true},\"voice\":{\"ASR\":{\"recognition-timeout\":10000,\"speech-complete-timeout\":2500},\"TTS\":{\"secondAnswer\":\"<speak>Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. </speak>\"}}}"
+    id: "a4c5a7aa-fe4d-4f5c-bdac-74c34fe12602"
+    interface: WRITTEN
+    interface_value: 1
+    language: "pl-PL"
+    operation: "Fluency"
+  }
+}
+D/VisServiceProvider: DialogueHistoryResponse -> next [].
+I/VisServiceProvider: DialogueHistoryResponse -> completed.
+D/VisServiceProvider: # lekta.vis.Vis$DialogueOutputStream@521a0b35
+dialogue_output {
+  output {
+    answer: "Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. "
+    context: "{\"app\":{\"suggestions\":[\"Sprawd\305\272 stan konta\",\"Ostatnie transakcje\",\"Zr\303\263b przelew\"]},\"fluency\":{\"continuedConversation\":true},\"voice\":{\"ASR\":{\"recognition-timeout\":10000,\"speech-complete-timeout\":2500},\"TTS\":{\"secondAnswer\":\"<speak>Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. </speak>\"}}}"
+    id: "112d24bc-6e15-4113-9cee-3ed72ef66bf3"
+    interface: WRITTEN
+    interface_value: 1
+    language: "pl-PL"
+    operation: "Fluency"
+  }
+}
+D/VisServiceProvider: DialogueHistoryResponse -> next [].
+I/VisServiceProvider: DialogueHistoryResponse -> completed.
+D/VisServiceProvider: # lekta.vis.Vis$DialogueOutputStream@2bfde0b4
+dialogue_output {
+  output {
+    answer: "Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. "
+    context: "{\"app\":{\"suggestions\":[\"Sprawd\305\272 stan konta\",\"Ostatnie transakcje\",\"Zr\303\263b przelew\"]},\"fluency\":{\"continuedConversation\":true},\"voice\":{\"ASR\":{\"recognition-timeout\":10000,\"speech-complete-timeout\":2500},\"TTS\":{\"secondAnswer\":\"<speak>Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. </speak>\"}}}"
+    id: "2e417fb1-3688-41ba-8d1b-a5eead33520a"
+    interface: WRITTEN
+    interface_value: 1
+    language: "pl-PL"
+    operation: "Fluency"
+  }
+}
+D/VisServiceProvider: DialogueHistoryResponse -> next [].
+I/VisServiceProvider: DialogueHistoryResponse -> completed.
+D/VisServiceProvider: # lekta.vis.Vis$DialogueOutputStream@54144aa1
+dialogue_output {
+  output {
+    answer: "Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. "
+    context: "{\"app\":{\"suggestions\":[\"Sprawd\305\272 stan konta\",\"Ostatnie transakcje\",\"Zr\303\263b przelew\"]},\"fluency\":{\"continuedConversation\":true},\"voice\":{\"ASR\":{\"recognition-timeout\":10000,\"speech-complete-timeout\":2500},\"TTS\":{\"secondAnswer\":\"<speak>Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. </speak>\"}}}"
+    id: "06aa13e0-14b6-4a8a-83cd-8db75e4cc9a9"
+    interface: WRITTEN
+    interface_value: 1
+    language: "pl-PL"
+    operation: "Fluency"
+  }
+}
+D/VisServiceProvider: DialogueHistoryResponse -> next [].
+I/VisServiceProvider: DialogueHistoryResponse -> completed.
+D/VisServiceProvider: # lekta.vis.Vis$DialogueOutputStream@4a4cee01
+dialogue_output {
+  output {
+    answer: "Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. "
+    context: "{\"app\":{\"suggestions\":[\"Sprawd\305\272 stan konta\",\"Ostatnie transakcje\",\"Zr\303\263b przelew\"]},\"fluency\":{\"continuedConversation\":true},\"voice\":{\"ASR\":{\"recognition-timeout\":10000,\"speech-complete-timeout\":2500},\"TTS\":{\"secondAnswer\":\"<speak>Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. </speak>\"}}}"
+    id: "71c9fcdc-a7e4-43b5-8e7b-d31a832716dc"
+    interface: WRITTEN
+    interface_value: 1
+    language: "pl-PL"
+    operation: "Fluency"
+  }
+}
+I/VisServiceProvider: DialogueOpenedStream -> completed.
+D/VisServiceProvider: # lekta.vis.Vis$DialogueOutputStream@5bbb7348
+dialogue_output {
+  output {
+    answer: "Podaj numer telefonu lub nazw\304\231 odbiorcy do\305\202adowania. "
+    context: "{\"app\":{\"suggestions\":[],\"widgets\":[{\"metadata\":{\"clickable\":true,\"list\":[{\"favouriteId\":11111,\"msisdn\":\"48884504885\",\"name\":\"Joanna Butrymowicz\"},{\"favouriteId\":22222,\"msisdn\":\"48663462367\",\"name\":\"Przemys\305\202aw Grochowski\"},{\"favouriteId\":33333,\"msisdn\":\"48678923130\",\"name\":\"Ma\305\202gorzata Dunajewska\"}],\"phoneBookButton\":{\"action\":{\"redirect\":\"WIDGET_PHONE_BOOK\"}},\"showMoreButton\":{\"action\":{\"redirect\":\"WIDGET_BENEFICIARY_FAVOURITE_LIST\"}}},\"type\":7}]},\"fluency\":{\"continuedConversation\":true},\"voice\":{\"ASR\":{\"recognition-timeout\":10000,\"speech-complete-timeout\":2500},\"TTS\":{\"secondAnswer\":\"<speak>Podaj numer telefonu lub nazw\304\231 odbiorcy do\305\202adowania. </speak>\"}}}"
+    id: "71c9fcdc-a7e4-43b5-8e7b-d31a832716dc"
+    interface: WRITTEN
+    interface_value: 1
+    language: "pl-PL"
+    operation: "Fluency"
+  }
+}
+D/VisServiceProvider: DialogueHistoryResponse -> next [].
+I/VisServiceProvider: DialogueHistoryResponse -> completed.
+D/VisServiceProvider: # lekta.vis.Vis$DialogueOutputStream@349d19ec
+dialogue_output {
+  output {
+    answer: "Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. "
+    context: "{\"app\":{\"suggestions\":[\"Sprawd\305\272 stan konta\",\"Ostatnie transakcje\",\"Zr\303\263b przelew\"]},\"fluency\":{\"continuedConversation\":true},\"voice\":{\"ASR\":{\"recognition-timeout\":10000,\"speech-complete-timeout\":2500},\"TTS\":{\"secondAnswer\":\"<speak>Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. </speak>\"}}}"
+    id: "164f3d49-d491-4a22-93ba-2d0947a06bc8"
+    interface: WRITTEN
+    interface_value: 1
+    language: "pl-PL"
+    operation: "Fluency"
+  }
+}
+D/VisServiceProvider: DialogueHistoryResponse -> next [].
+I/VisServiceProvider: DialogueHistoryResponse -> completed.
+D/VisServiceProvider: # lekta.vis.Vis$DialogueOutputStream@f9601194
+dialogue_output {
+  output {
+    answer: "Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. "
+    context: "{\"app\":{\"suggestions\":[\"Sprawd\305\272 stan konta\",\"Ostatnie transakcje\",\"Zr\303\263b przelew\"]},\"fluency\":{\"continuedConversation\":true},\"voice\":{\"ASR\":{\"recognition-timeout\":10000,\"speech-complete-timeout\":2500},\"TTS\":{\"secondAnswer\":\"<speak>Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. </speak>\"}}}"
+    id: "3e53be1f-0472-41e6-900a-190bdf7781f1"
+    interface: WRITTEN
+    interface_value: 1
+    language: "pl-PL"
+    operation: "Fluency"
+  }
+}
+, input-type=0, ime-target=true, has-links=false} 
+|
++----------->AppCompatButton{id=2131361870, res-name=debugClearConsoleBtn, visibility=VISIBLE, width=176, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@aefc588, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=528.0, text=Clear, input-type=0, ime-target=false, has-links=false} 
+|
++->View{id=16908336, res-name=navigationBarBackground, visibility=VISIBLE, width=720, height=93, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@576bb21, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=1187.0} 
+|
++->View{id=16908335, res-name=statusBarBackground, visibility=VISIBLE, width=720, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@d17eb46, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+|
+	at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+	at java.lang.Thread.getStackTrace(Thread.java:580)
+	at android.support.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:88)
+	at android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:51)
+	at android.support.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:312)
+	at android.support.test.espresso.ViewInteraction.check(ViewInteraction.java:297)
+	at ai.lekta.sdk.demo.greenpath.FAQ.greenPathFAQ(FAQ.java:91)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:527)
+	at android.support.test.rule.GrantPermissionRule$RequestPermissionStatement.evaluate(GrantPermissionRule.java:129)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at android.support.test.runner.AndroidJUnit4.run(AndroidJUnit4.java:101)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:56)
+	at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:384)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1886)
+
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=greenPathFAQ
+INSTRUMENTATION_STATUS: class=ai.lekta.sdk.demo.greenpath.FAQ
+INSTRUMENTATION_STATUS: stack=android.support.test.espresso.NoMatchingViewException: No views in hierarchy found matching: (with id: ai.lekta.sdk.demo:id/messageTv and with text: is "Jak mam dodać odbiorcę zdefiniowanego?" and is displayed on the screen to the user)
+
+View Hierarchy:
++>DecorView{id=-1, visibility=VISIBLE, width=720, height=1280, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=WM.LayoutParams{(0,0)(fillxfill) ty=1 fl=#81810100 wanim=0x103045b needsMenuKey=2 clr=0x1}, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3} 
+|
++->LinearLayout{id=-1, visibility=VISIBLE, width=720, height=1187, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@7234886, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++-->ViewStub{id=16909220, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@7c2e547, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+|
++-->FrameLayout{id=-1, visibility=VISIBLE, width=720, height=1139, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@bc17174, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=48.0, child-count=1} 
+|
++--->FitWindowsLinearLayout{id=2131361806, res-name=action_bar_root, visibility=VISIBLE, width=720, height=1139, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@7db6712, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++---->ViewStubCompat{id=2131361817, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@bbe8ee3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+|
++---->ContentFrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=720, height=1139, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@63e30e0, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++----->FrameLayout{id=2131361863, res-name=container, visibility=VISIBLE, width=720, height=1139, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@89f3f99, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++------>DrawerLayout{id=2131361822, res-name=activity_main, visibility=VISIBLE, width=720, height=1139, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@a84e25e, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=1139, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v4.widget.DrawerLayout$LayoutParams@57b0c, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=6} 
+|
++-------->ConstraintLayout{id=2131362084, res-name=toolbarLayout, visibility=VISIBLE, width=720, height=144, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@51b3c55, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+|
++--------->AppCompatTextView{id=2131361889, res-name=dialogueIdTv, visibility=VISIBLE, width=483, height=71, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@7b8c66a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=119.0, y=37.0, text=3e53be1f-0472-41e6-900a-190bdf7781f1, input-type=0, ime-target=false, has-links=false} 
+|
++--------->AppCompatImageView{id=2131361858, res-name=closeBtn, visibility=VISIBLE, width=96, height=96, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@61cf75b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=608.0, y=24.0} 
+|
++-------->RecyclerView{id=2131361853, res-name=chatList, visibility=VISIBLE, width=720, height=819, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@9153bf8, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=144.0, child-count=4} 
+|
++--------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=123, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@2048d1, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=-121.0, child-count=1} 
+|
++---------->AppCompatTextView{id=2131361960, res-name=messageTv, visibility=VISIBLE, width=544, height=123, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@694df36, tag=null, root-is-layout-requested=false, has-input-connection=false, x=128.0, y=0.0, text=Gdzie znajdę potwierdzenie przelewu?, input-type=0, ime-target=false, has-links=false} 
+|
++--------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=443, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@329ae37, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=34.0, child-count=1} 
+|
++---------->AppCompatTextView{id=2131361960, res-name=messageTv, visibility=VISIBLE, width=544, height=443, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@15e1fa4, tag=null, root-is-layout-requested=false, has-input-connection=false, x=48.0, y=0.0, text=1. Wejdź w szczegóły operacji, dla której potrzebujesz potwierdzenie. 2. W prawym górnym rogu kliknij ikonę z trzema kropkami, a następnie wybierz “Generuj potwierdzenie”. 3. Po wyświetleniu potwierdzenia możesz kliknąć ikonę udostępniania, by wysłać potwierdzenie. , input-type=0, ime-target=false, has-links=false} 
+|
++--------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=123, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@f8fa10d, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=509.0, child-count=1} 
+|
++---------->AppCompatTextView{id=2131361960, res-name=messageTv, visibility=VISIBLE, width=544, height=123, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@47b8c2, tag=null, root-is-layout-requested=false, has-input-connection=false, x=128.0, y=0.0, text=Jak mam dodać/zmienić odbiorcę zdefiniowanego?, input-type=0, ime-target=false, has-links=false} 
+|
++--------->ConstraintLayout{id=2131362007, res-name=root, visibility=VISIBLE, width=720, height=123, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@e0f6d3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=664.0, child-count=1} 
+|
++---------->AppCompatTextView{id=2131361960, res-name=messageTv, visibility=VISIBLE, width=544, height=123, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@52f9210, tag=null, root-is-layout-requested=false, has-input-connection=false, x=48.0, y=0.0, text=Niestety, nie zrozumiałam. Wpisz tekst raz jeszcze. , input-type=0, ime-target=false, has-links=false} 
+|
++-------->AppCompatTextView{id=2131361972, res-name=noConnectionLayout, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@c224109, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=Connection lost. Trying to reconnect…, input-type=0, ime-target=false, has-links=false} 
+|
++-------->View{id=2131362087, res-name=topShadow, visibility=VISIBLE, width=720, height=2, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@5c9f0e, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=144.0} 
+|
++-------->View{id=2131361843, res-name=bottomShadow, visibility=VISIBLE, width=720, height=2, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@2ba2d2f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=961.0} 
+|
++-------->ConstraintLayout{id=2131361932, res-name=inputLayout, visibility=VISIBLE, width=720, height=176, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@724e4c5, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=963.0, child-count=6} 
+|
++--------->AppCompatImageView{id=2131361967, res-name=muteBtn, visibility=VISIBLE, width=96, height=96, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@dc79e1a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=40.0} 
+|
++--------->AppCompatImageView{id=2131362035, res-name=showTextInterfaceBtn, desc=Show text input icon, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@2466d4b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+|
++--------->AppCompatImageView{id=2131362037, res-name=showVoiceInterfaceBtn, desc=Show voice input icon, visibility=VISIBLE, width=96, height=96, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@4b9328, tag=null, root-is-layout-requested=false, has-input-connection=false, x=122.0, y=40.0} 
+|
++--------->AppCompatEditText{id=2131361931, res-name=input, visibility=VISIBLE, width=378, height=81, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@ff40841, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x24001 imeOptions=0x44000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x2000 hintText=Start typing here… label=null packageName=null fieldId=0 fieldName=null extras=null ], x=218.0, y=48.0, text=, hint=Start typing here…, input-type=147457, ime-target=false, has-links=false} 
+|
++--------->AppCompatImageView{id=2131362031, res-name=sendBtn, visibility=VISIBLE, width=96, height=96, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@8b181e6, tag=null, root-is-layout-requested=false, has-input-connection=false, x=608.0, y=40.0} 
+|
++--------->AppCompatImageView{id=2131362045, res-name=speakBtn, visibility=INVISIBLE, width=128, height=128, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.constraint.ConstraintLayout$LayoutParams@70c9327, tag=null, root-is-layout-requested=false, has-input-connection=false, x=296.0, y=24.0} 
+|
++------->NavigationView{id=-1, visibility=INVISIBLE, width=592, height=1139, has-focus=true, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v4.widget.DrawerLayout$LayoutParams@c5ab9d4, tag=null, root-is-layout-requested=false, has-input-connection=false, x=-592.0, y=0.0, child-count=2} 
+|
++-------->NavigationMenuView{id=2131361888, res-name=design_navigation_view, visibility=VISIBLE, width=592, height=1139, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@537e77d, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++--------->LinearLayout{id=2131361970, res-name=navigation_header_container, visibility=VISIBLE, width=592, height=16, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.support.v7.widget.RecyclerView$LayoutParams@903d672, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=0} 
+|
++-------->ScrollView{id=-1, visibility=VISIBLE, width=592, height=1139, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@253ac3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++--------->LinearLayout{id=-1, visibility=VISIBLE, width=592, height=2035, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@d939f40, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=10} 
+|
++---------->AppCompatTextView{id=-1, visibility=VISIBLE, width=512, height=49, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@de07e79, tag=null, root-is-layout-requested=false, has-input-connection=false, x=40.0, y=32.0, text=Demo SDK Developer menu, input-type=0, ime-target=false, has-links=false} 
+|
++---------->AppCompatTextView{id=2131362018, res-name=sdkVersion, visibility=VISIBLE, width=512, height=49, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@9b4e7be, tag=null, root-is-layout-requested=false, has-input-connection=false, x=40.0, y=81.0, text=0.8.4 debug, input-type=0, ime-target=false, has-links=false} 
+|
++---------->AppCompatTextView{id=2131361995, res-name=pingDelay, visibility=VISIBLE, width=512, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@b96c01f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=40.0, y=146.0, text=Delay: 144ms, input-type=0, ime-target=false, has-links=false} 
+|
++---------->AppCompatTextView{id=-1, visibility=VISIBLE, width=512, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@4b36f6c, tag=null, root-is-layout-requested=false, has-input-connection=false, x=40.0, y=200.0, text=TTS, input-type=0, ime-target=false, has-links=false} 
+|
++---------->LinearLayout{id=-1, visibility=VISIBLE, width=528, height=224, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@5e18935, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=254.0, child-count=2} 
+|
++----------->AppCompatButton{id=2131361874, res-name=debugSayLongTextBtn, visibility=VISIBLE, width=253, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@cd3c1ca, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=16.0, text=Say long text, input-type=0, ime-target=false, has-links=false} 
+|
++----------->LinearLayout{id=-1, visibility=VISIBLE, width=496, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@7713f3b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=112.0, child-count=2} 
+|
++------------>AppCompatButton{id=2131361875, res-name=debugSayTextBtn, visibility=VISIBLE, width=176, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@f1e1658, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=Say, input-type=0, ime-target=false, has-links=false} 
+|
++------------>AppCompatEditText{id=2131361876, res-name=debugSayTextEdt, visibility=VISIBLE, width=320, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@aae83b1, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x1 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Type text here… label=null packageName=null fieldId=0 fieldName=null extras=null ], x=176.0, y=0.0, text=, hint=Type text here…, input-type=1, ime-target=false, has-links=false} 
+|
++---------->AppCompatTextView{id=-1, visibility=VISIBLE, width=512, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@4543096, tag=null, root-is-layout-requested=false, has-input-connection=false, x=40.0, y=494.0, text=LES, input-type=0, ime-target=false, has-links=false} 
+|
++---------->LinearLayout{id=-1, visibility=VISIBLE, width=528, height=219, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@8aa9417, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=548.0, child-count=2} 
+|
++----------->AppCompatEditText{id=2131361873, res-name=debugMessageActionEdt, visibility=VISIBLE, width=496, height=91, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@a8a4004, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x1 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Type text here… label=null packageName=null fieldId=0 fieldName=null extras=null ], x=16.0, y=16.0, text=, hint=Type text here…, input-type=1, ime-target=false, has-links=false} 
+|
++----------->AppCompatButton{id=2131361878, res-name=debugSendMessageBtn, visibility=VISIBLE, width=255, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@376a9ed, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=107.0, text=Send message, input-type=0, ime-target=false, has-links=false} 
+|
++---------->LinearLayout{id=-1, visibility=VISIBLE, width=528, height=478, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@b9ac022, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=799.0, child-count=3} 
+|
++----------->AppCompatEditText{id=2131361871, res-name=debugCommandActionEdt, visibility=VISIBLE, width=496, height=91, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@3ba5ab3, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x1 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Action, e.g. SHOW_BLIK label=null packageName=null fieldId=0 fieldName=null extras=null ], x=16.0, y=16.0, text=, hint=Action, e.g. SHOW_BLIK, input-type=1, ime-target=false, has-links=false} 
+|
++----------->AppCompatEditText{id=2131361872, res-name=debugCommandPayloadEdt, visibility=VISIBLE, width=496, height=259, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@76d5870, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x20001 imeOptions=0x48000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Payload, e.g. { "blik" : "012345", "new" : false } label=null packageName=null fieldId=0 fieldName=null extras=null ], x=16.0, y=107.0, text=, hint=Payload, e.g.
+{
+"blik" : "012345",
+"new" : false
+}, input-type=131073, ime-target=false, has-links=false} 
+|
++----------->AppCompatButton{id=2131361877, res-name=debugSendCommandBtn, visibility=VISIBLE, width=270, height=96, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@120f7e9, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=366.0, text=Send Command, input-type=0, ime-target=false, has-links=false} 
+|
++---------->AppCompatTextView{id=-1, visibility=VISIBLE, width=512, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@dc8bc6e, tag=null, root-is-layout-requested=false, has-input-connection=false, x=40.0, y=1293.0, text=LOGS, input-type=0, ime-target=false, has-links=false} 
+|
++---------->LinearLayout{id=-1, visibility=VISIBLE, width=528, height=640, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@2f5ef0f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=1347.0, child-count=2} 
+|
++----------->NestedScrollView{id=-1, visibility=VISIBLE, width=496, height=512, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@6278b9c, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=16.0, child-count=1} 
+|
++------------>Console{id=-1, visibility=VISIBLE, width=496, height=12677, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@20829a5, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++------------->ScrollView{id=2131361861, res-name=console_scroll_view, visibility=VISIBLE, width=496, height=12677, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@4c8317a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+|
++-------------->AppCompatTextView{id=2131361862, res-name=console_text, visibility=VISIBLE, width=496, height=12677, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=true, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@6ac6d2b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=D/VisServiceProvider: DialogueHistoryResponse -> next [].
+I/VisServiceProvider: DialogueHistoryResponse -> completed.
+D/VisServiceProvider: # lekta.vis.Vis$DialogueOutputStream@4547429c
+dialogue_output {
+  output {
+    answer: "Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. "
+    context: "{\"app\":{\"suggestions\":[\"Sprawd\305\272 stan konta\",\"Ostatnie transakcje\",\"Zr\303\263b przelew\"]},\"fluency\":{\"continuedConversation\":true},\"voice\":{\"ASR\":{\"recognition-timeout\":10000,\"speech-complete-timeout\":2500},\"TTS\":{\"secondAnswer\":\"<speak>Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. </speak>\"}}}"
+    id: "e947cb08-26ce-4083-8511-b6ecc934ad70"
+    interface: WRITTEN
+    interface_value: 1
+    language: "pl-PL"
+    operation: "Fluency"
+  }
+}
+D/VisServiceProvider: DialogueHistoryResponse -> next [].
+I/VisServiceProvider: DialogueHistoryResponse -> completed.
+D/VisServiceProvider: # lekta.vis.Vis$DialogueOutputStream@b2b9c5ce
+dialogue_output {
+  output {
+    answer: "Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. "
+    context: "{\"app\":{\"suggestions\":[\"Sprawd\305\272 stan konta\",\"Ostatnie transakcje\",\"Zr\303\263b przelew\"]},\"fluency\":{\"continuedConversation\":true},\"voice\":{\"ASR\":{\"recognition-timeout\":10000,\"speech-complete-timeout\":2500},\"TTS\":{\"secondAnswer\":\"<speak>Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. </speak>\"}}}"
+    id: "a4c5a7aa-fe4d-4f5c-bdac-74c34fe12602"
+    interface: WRITTEN
+    interface_value: 1
+    language: "pl-PL"
+    operation: "Fluency"
+  }
+}
+D/VisServiceProvider: DialogueHistoryResponse -> next [].
+I/VisServiceProvider: DialogueHistoryResponse -> completed.
+D/VisServiceProvider: # lekta.vis.Vis$DialogueOutputStream@521a0b35
+dialogue_output {
+  output {
+    answer: "Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. "
+    context: "{\"app\":{\"suggestions\":[\"Sprawd\305\272 stan konta\",\"Ostatnie transakcje\",\"Zr\303\263b przelew\"]},\"fluency\":{\"continuedConversation\":true},\"voice\":{\"ASR\":{\"recognition-timeout\":10000,\"speech-complete-timeout\":2500},\"TTS\":{\"secondAnswer\":\"<speak>Dzie\305\204 dobry! Ch\304\231tnie us\305\202ysz\304\231, w czym mog\305\202abym Ci pom\303\263c. </speak>\"}}}"
+    id: "112d24bc-6e15-4113-9cee-3ed72ef66bf3"
+    interface: WRITTEN
+    interface
+
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: numtests=16
+INSTRUMENTATION_STATUS: stream=
+ai.lekta.sdk.demo.greenpath.HistoriaRachunku:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=greenPathHistoriaRachunku
+INSTRUMENTATION_STATUS: class=ai.lekta.sdk.demo.greenpath.HistoriaRachunku
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: numtests=16
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=greenPathHistoriaRachunku
+INSTRUMENTATION_STATUS: class=ai.lekta.sdk.demo.greenpath.HistoriaRachunku
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: numtests=16
+INSTRUMENTATION_STATUS: stream=
+ai.lekta.sdk.demo.greenpath.HistoriaSzczegolowa:
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: test=greenPathHistoriaSzczegolowa
+INSTRUMENTATION_STATUS: class=ai.lekta.sdk.demo.greenpath.HistoriaSzczegolowa
+INSTRUMENTATION_STATUS: current=6
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_RESULT: shortMsg=java.lang.IllegalStateException
+INSTRUMENTATION_RESULT: longMsg=java.lang.IllegalStateException: Unable to retrieve AudioTrack pointer for start()
+INSTRUMENTATION_CODE: 0

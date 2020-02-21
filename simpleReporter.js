@@ -1,6 +1,6 @@
 const fs = require("fs");
 const request = require("request");
-const logInfo = ["./testLog.txt", "UTF-8"];
+const logInfo = ["./emptyLog.txt", "UTF-8"];
 const headers = { "Content-type": "application/json" };
 const fileUploadUrl = "https://slack.com/api/files.upload";
 const slackHook =
@@ -22,7 +22,7 @@ class Reporter {
       this.timePositionIndex + 300
     );
     this.testTimeString = this.testsSummaryString.split("\n")[0];
-    this.testTimeNumber = this.testTimeString.replace("Time: ", "")
+    this.testTimeNumber = parseFloat(this.testTimeString.replace("Time: ", "").replace(",", "."));
     this.matchedTests = this.logArray.filter(matchTests);
     this.testsPerformed = [...new Set(this.matchedTests)];
     this.performedTestsList = this.testsPerformed
@@ -30,6 +30,7 @@ class Reporter {
       .replace(/INSTRUMENTATION_STATUS: test=/g, "")
       .replace(/,/g, "\n");
   }
+
 
   sendLogFile() {
     console.log("Sending log file to slack...");
@@ -100,6 +101,8 @@ class Reporter {
       } else if (result.status === "uncomplete") {
         delete slackMessage.attachments;
         return slackMessage;
+      } else {
+        console.log(result.failsSlackInfo);
       }
     })();
 
@@ -111,7 +114,7 @@ class Reporter {
       request.post(
         { url: slackHook, body: payload, headers: headers },
         (err, response) => {
-          if (response.body.includes("ok")) resolve("Report send successfully!");
+          if (response.body.includes("ok")) resolve(`Report send successfully!`);
           if (response.body.includes("error")) reject(`Failed to send report: ${response.body}`);
           if (err) reject(err);
         }
@@ -170,7 +173,7 @@ class Reporter {
         };
 
         reject(result);
-      } else {
+      } else if (this.timePositionIndex === -1) {
         const result = {
           status: "uncomplete",
           message:
