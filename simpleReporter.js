@@ -7,6 +7,7 @@ const slackHook =
   "***";
 const token =
   "***";
+const slackChannel = "***";
 const nonZeroExit = () => setTimeout(() => process.exit(1), 2000);
 const matchTests = str => str.match("test=");
 
@@ -47,7 +48,7 @@ class Reporter {
             title: "Test Log File",
             filename: "testLog.txt",
             filetype: "auto",
-            channels: "GHHAZCKS6",
+            channels: "***",
             file: fs.createReadStream("testLog.txt")
           }
         },
