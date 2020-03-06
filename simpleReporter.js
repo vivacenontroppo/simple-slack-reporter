@@ -48,7 +48,7 @@ class Reporter {
             title: "Test Log File",
             filename: "testLog.txt",
             filetype: "auto",
-            channels: "***",
+            channels: slackChannel,
             file: fs.createReadStream("testLog.txt")
           }
         },
