@@ -7,7 +7,7 @@ const slackHook =
   "***";
 const token =
   "***";
-const nonZeroExit = () => setTimeout(() => process.exit(1), 1000);
+const nonZeroExit = () => setTimeout(() => process.exit(1), 2000);
 const matchTests = str => str.match("test=");
 
 class Reporter {
@@ -22,7 +22,12 @@ class Reporter {
       this.timePositionIndex + 300
     );
     this.testTimeString = this.testsSummaryString.split("\n")[0];
-    this.testTimeNumber = parseFloat(this.testTimeString.replace("Time: ", "").replace(",", "."));
+    this.testTimeNumber = 
+      ~~parseFloat(this.testTimeString
+      .replace("Time: ", "")
+      .replace(",",""))
+    this.testTimeNumberMinutes = ~~(this.testTimeNumber / 60)
+    this.testTimeNumberSeconds = this.testTimeNumber - this.testTimeNumberMinutes*60
     this.matchedTests = this.logArray.filter(matchTests);
     this.testsPerformed = [...new Set(this.matchedTests)];
     this.performedTestsList = this.testsPerformed
@@ -30,7 +35,6 @@ class Reporter {
       .replace(/INSTRUMENTATION_STATUS: test=/g, "")
       .replace(/,/g, "\n");
   }
-
 
   sendLogFile() {
     console.log("Sending log file to slack...");
@@ -43,7 +47,7 @@ class Reporter {
             title: "Test Log File",
             filename: "testLog.txt",
             filetype: "auto",
-            channels: "***",
+            channels: "GHHAZCKS6",
             file: fs.createReadStream("testLog.txt")
           }
         },
@@ -72,7 +76,7 @@ class Reporter {
             },
             {
               title: ":hourglass:*Time:*",
-              value: `${this.testTimeNumber} seconds`,
+              value: `${this.testTimeNumberMinutes} minutes ${this.testTimeNumberSeconds} seconds`,
               short: true
             },
             {
