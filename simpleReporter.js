@@ -1,6 +1,6 @@
 const fs = require("fs");
 const request = require("request");
-const logInfo = ["./emptyLog.txt", "UTF-8"];
+const logInfo = ["./testLog.txt", "UTF-8"];
 const headers = { "Content-type": "application/json" };
 const fileUploadUrl = "https://slack.com/api/files.upload";
 const slackHook =
