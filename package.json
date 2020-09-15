@@ -1,0 +1,14 @@
+{
+  "name": "simple-slack-reporter",
+  "version": "1.0.3",
+  "description": "It's a simple slack reporter for test automation.",
+  "main": "simpleReporter.js",
+  "scripts": {
+    "test": "node simpleReporter.js"
+  },
+  "author": "Marian Kucharski",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}

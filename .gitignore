@@ -1,0 +1,13 @@
+.DS_Store
+*/*.DS_Store
+node_modules
+.vscode
+test/**/*.js
+tmp
+.idea
+npm-debug.log
+package-lock.json
+testresults/**/*
+common.config.repo.js
+hookedSimpleReporter.js
+reporter-tts-asr
