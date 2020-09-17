@@ -1,15 +1,13 @@
 const { WebClient } = require("@slack/web-api");
 const fs = require("fs");
 const config = JSON.parse(fs.readFileSync("./config.json", "utf8"));
-interface resultT {
+const token = process.env.SLACK_TOKEN;
+interface Result {
   title: string;
   failed: boolean;
   color: string;
   description: string;
 }
-
-// An access token for gitlab CI safe token:
-// const token = process.env.SLACK_TOKEN;
 
 export class Reporter {
   channel: string;
@@ -18,20 +16,20 @@ export class Reporter {
   file: string;
   logArray: string[];
   failedUrls: string[];
-  result: resultT;
+  result: Result;
   slackApp: any;
 
   constructor() {
+    this.authToken = token;
     this.channel = config.slack.channel;
     this.logInfo = config.slack.logInfo;
-    this.authToken = config.slack.token;
     this.file = fs.readFileSync(this.logInfo[0], this.logInfo[1]);
     this.logArray = this.file.split(/\n/);
     this.slackApp = new WebClient(this.authToken);
     this.failedUrls = [];
   }
 
-  getResult = async (): Promise<resultT> => {
+  getResult = async (): Promise<Result> => {
     this.file.includes("CHECK")
       ? this.logArray.forEach((el) => {
           if (el.includes("CHECK")) {
@@ -40,7 +38,8 @@ export class Reporter {
             );
           }
         })
-      : [];
+      : /* tslint:disable-next-line: no-unused-expression */
+        [];
     if (this.file.includes("CHECK")) {
       return (this.result = {
         title: "Test failed!",
@@ -66,7 +65,7 @@ export class Reporter {
     }
   };
 
-  postResult = async (res: resultT): Promise<void> => {
+  postResult = async (res: Result): Promise<void> => {
     try {
       await this.slackApp.chat.postMessage({
         text: `:package: *Directory / file indexing test:*\n.`,
