@@ -1,7 +1,7 @@
 const { WebClient } = require("@slack/web-api");
 const fs = require("fs");
-const config = JSON.parse(fs.readFileSync("./config.json", "utf8"));
-const token = process.env.SLACK_TOKEN;
+const config = JSON.parse(fs.readFileSync("directory-indexing-check/config.json", "utf8"));
+const token = 'xoxb-221114625218-1350157923462-3Rubez2y2IH84Sez51d3cNNx'
 interface Result {
   title: string;
   failed: boolean;
@@ -113,7 +113,8 @@ export class Reporter {
 
   resolveTest(): void {
     if (this.result.failed) {
-      throw new Error(config.slack.errorMsg);
+      console.log(config.slack.errorMsg);
+      process.exitCode = 1;
     } else {
       console.log(config.slack.succMsg);
     }
