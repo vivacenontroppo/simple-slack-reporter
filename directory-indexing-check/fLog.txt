@@ -1,0 +1,51 @@
+
+[34mTesting...[0m 
+ 
+
+eic.exitrealty.com - [36m OK [0m
+http://18.224.244.13/certsmonitor - [36m OK [0m
+websites.exitrealty.com - [36m OK [0m
+http://show.exitrealty.com/images/ - [36m OK [0m
+exitrealty.com - [36m OK [0m
+show.exitrealty.com - [36m OK [0m
+http://app.exitrealty.com/pdf/ - [36m OK [0m
+code.exitrealty.com - [36m OK [0m
+search-engine.exitrealty.com - [36m OK [0m
+text-code.exitrealty.com - [36m OK [0m
+app.exitrealty.com - [36m OK [0m
+alpha-show.exitrealty.com - [36m OK [0m
+app-connect.exitrealty.com - [36m OK [0m
+alpha-websites.exitrealty.com - [36m OK [0m
+nle.lim.bz - [36m OK [0m
+alpha-code.exitrealty.com - [36m OK [0m
+link.exitrealty.com - [36m OK [0m
+http://my-virtual-home.tours/listing-tour/ - [36m OK [0m
+site-api.exitrealty.com - [36m OK [0m
+alpha-search-engine.exitrealty.com - [36m OK [0m
+onedb.lim.bz - [36m OK [0m
+beta-code.exitrealty.com - [36m OK [0m
+myexit.co - [36m OK [0m
+beta-new.exitrealty.com - [36m OK [0m
+alpha-app.exitrealty.com - [36m OK [0m
+alpha-new.exitrealty.com - [36m OK [0m
+beta-show.exitrealty.com - [36m OK [0m
+beta-site-api.exitrealty.com - [36m OK [0m
+alpha-app-connect.exitrealty.com - [36m OK [0m
+http://beta-onedb.lim.bz - [36m OK [0m
+alpha-search-engine.exitrealty.com - [36m OK [0m
+myexitco-beta.lim.bz - [36m OK [0m
+joinexitrealty.com - [36m OK [0m
+alpha-onedb.lim.bz - [36m OK [0m
+beta-app.exitrealty.com - [36m OK [0m
+https://alpha.my-virtual-home.tours/ - [36m OK [0m
+prompter.ca - [36m OK [0m
+alpha-link.exitrealty.com - [36m OK [0m
+https://sharronexit.com/assets/bat/phpmailer/ - [35m CHECK NEEDED! [0m
+https://beta.my-virtual-home.tours - [36m OK [0m
+https://sharronexit.com/assets/ - [35m CHECK NEEDED! [0m
+https://sharronexit.com/assets/bat/ - [35m CHECK NEEDED! [0m
+alpha-site-api.exitrealty.com - [36m OK [0m
+https://er-api.lim.bz/ - [36m OK [0m
+beta-link.exitrealty.com - [36m OK [0m
+beta-app-connect.exitrealty.com - [36m OK [0m
+https://alpha-joinexitrealty.lim.bz/ - [36m OK [0m

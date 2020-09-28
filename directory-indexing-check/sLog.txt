@@ -1,0 +1,24 @@
+
+[34mTesting...[0m 
+ 
+
+eic.exitrealty.com - [36m OK [0m
+websites.exitrealty.com - [36m OK [0m
+http://show.exitrealty.com/images/ - [36m OK [0m
+exitrealty.com - [36m OK [0m
+nle.lim.bz - [36m OK [0m
+show.exitrealty.com - [36m OK [0m
+code.exitrealty.com - [36m OK [0m
+http://app.exitrealty.com/pdf/ - [36m OK [0m
+http://18.224.244.13/certsmonitor - [36m OK [0m
+http://my-virtual-home.tours/listing-tour/ - [36m OK [0m
+alpha-websites.exitrealty.com - [36m OK [0m
+onedb.lim.bz - [36m OK [0m
+text-code.exitrealty.com - [36m OK [0m
+alpha-code.exitrealty.com - [36m OK [0m
+alpha-new.exitrealty.com - [36m OK [0m
+app.exitrealty.com - [36m OK [0m
+app-connect.exitrealty.com - [36m OK [0m
+link.exitrealty.com - [36m OK [0m
+site-api.exitrealty.com - [36m OK [0m
+alpha-app.exitrealty.com - [36m OK [0m
