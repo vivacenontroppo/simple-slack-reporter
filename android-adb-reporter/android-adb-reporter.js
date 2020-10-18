@@ -1,3 +1,5 @@
+// THIS ONE IS PRETTY MUCH DEPRECATED AND SLOPPY (but it worked well at the time)
+
 const fs = require("fs");
 const request = require("request");
 const logInfo = ["./testLog.txt", "UTF-8"];
