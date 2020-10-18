@@ -25,7 +25,7 @@ const options = {
   path: "/api/files.upload",
   method: "POST",
   headers: {
-    Authorization: "Bearer xoxp-4860970357-206908540995-918390875140-af1568fcc129723fed568f59b806b6c7",
+    Authorization: "***",
     "Content-Type": "application/json; charset=utf-8"
   }
 };

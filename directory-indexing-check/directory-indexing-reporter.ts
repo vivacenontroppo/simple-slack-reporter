@@ -1,7 +1,7 @@
 const { WebClient } = require("@slack/web-api");
 const fs = require("fs");
 const config = JSON.parse(fs.readFileSync("directory-indexing-check/config.json", "utf8"));
-const token = 'xoxb-221114625218-1350157923462-3Rubez2y2IH84Sez51d3cNNx'
+const token = '***'
 interface Result {
   title: string;
   failed: boolean;
