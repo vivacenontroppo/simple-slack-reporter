@@ -74,6 +74,6 @@ export class CommonConfig {
     logInfo: ['./log.txt', 'UTF-8'],
     errorMsg: '--- Test failed! Check the results! ---',
     succMsg: '--- Test succed! ---',
-    pipelinesUrl: 'https://gitlab.lim.bz/dev/exit-com-e2e/-/jobs',
+    pipelinesUrl: '***',
   };
 }
