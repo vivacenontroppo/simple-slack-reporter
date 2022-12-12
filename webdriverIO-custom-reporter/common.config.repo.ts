@@ -1,7 +1,7 @@
 export class CommonConfig {
   public readonly url = {
-    devEnv: 'https://alpha-new.exitrealty.com/',
-    prodEnv: 'https://exitrealty.com/',
+    devEnv: 'https://***.com/',
+    prodEnv: 'https://***.com/',
   };
   public readonly user = {
     devClient: {
